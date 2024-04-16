@@ -11,7 +11,7 @@ Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos C
 - [Lombok](https://projectlombok.org/setup/)
 - [Postman](https://www.postman.com/downloads/)
 
-## Executar a API
+## Executar a API na IDE
 
 ```
 ./mvnw spring-boot:run
