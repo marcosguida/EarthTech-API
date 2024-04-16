@@ -17,6 +17,5 @@ Esta API faz parte do O projeto "EarthTech: Plataforma Inteligente para Pequenos
 
 ```
 ./mvnw spring-boot:run
-
 ```
 
