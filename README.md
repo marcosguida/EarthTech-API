@@ -9,7 +9,7 @@ Esta API faz parte do O projeto "EarthTech: Plataforma Inteligente para Pequenos
 - [Spring Boot](https://docs.spring.io/spring-boot/installing.html)
 - [Maven](https://maven.apache.org/download.cgi)
 - [MySQL](https://dev.mysql.com/downloads/installer/)
-- Hibernate
+- [Hibernate](https://hibernate.org/orm/documentation/getting-started/)
 - [Lombok](https://projectlombok.org/setup/)
 - [Postman](https://www.postman.com/downloads/)
 
