@@ -1,7 +1,15 @@
 package com.example.plantio.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Zoneamento {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String safra;
     private String cultura;
@@ -18,14 +26,9 @@ public class Zoneamento {
         this.solo = solo;
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Zoneamento() {
 
-    public void setId(Long id) {
-        this.id = id;
     }
-
     public String getSafra() {
         return safra;
     }
@@ -65,5 +68,13 @@ public class Zoneamento {
 
     public void setSolo(String solo) {
         this.solo = solo;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
