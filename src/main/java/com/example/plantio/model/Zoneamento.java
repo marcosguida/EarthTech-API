@@ -3,19 +3,19 @@ package com.example.plantio.model;
 public class Zoneamento {
 
     private Long id;
-    private String safra,  cultura, solo, municipio;
+    private String safra;
+    private String cultura;
+    private String municipio;
+    private String microrrregiao;
+    private String solo;
 
-    public Zoneamento(Long id, String safra, String cultura, String solo, String municipio) {
+    public Zoneamento(Long id, String safra, String cultura, String municipio, String microrrregiao, String solo) {
         this.id = id;
         this.safra = safra;
-    }
-
-    public String getSafra() {
-        return safra;
-    }
-
-    public void setSafra(String safra) {
-        this.safra = safra;
+        this.cultura = cultura;
+        this.municipio = municipio;
+        this.microrrregiao = microrrregiao;
+        this.solo = solo;
     }
 
     public Long getId() {
@@ -26,6 +26,14 @@ public class Zoneamento {
         this.id = id;
     }
 
+    public String getSafra() {
+        return safra;
+    }
+
+    public void setSafra(String safra) {
+        this.safra = safra;
+    }
+
     public String getCultura() {
         return cultura;
     }
@@ -34,13 +42,6 @@ public class Zoneamento {
         this.cultura = cultura;
     }
 
-    public String getSolo() {
-        return solo;
-    }
-
-    public void setSolo(String solo) {
-        this.solo = solo;
-    }
 
     public String getMunicipio() {
         return municipio;
@@ -48,5 +49,21 @@ public class Zoneamento {
 
     public void setMunicipio(String municipio) {
         this.municipio = municipio;
+    }
+
+    public String getMicrorrregiao() {
+        return microrrregiao;
+    }
+
+    public void setMicrorrregiao(String microrrregiao) {
+        this.microrrregiao = microrrregiao;
+    }
+
+    public String getSolo() {
+        return solo;
+    }
+
+    public void setSolo(String solo) {
+        this.solo = solo;
     }
 }
