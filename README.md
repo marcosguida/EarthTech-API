@@ -1,6 +1,6 @@
 # EarthTech-API
 
-Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos Cultivos" que tem como objetivo desenvolver uma plataforma de Internet das Coisas (IoT) para agricultura inteligente. Esta API permite aos usuários consultar dados atualizados do sistema ZARC do governo federal para exibir informações de mapeamento referente a zoneamento agrícola na região do Tocantins. O principal objetivo é promover inovação para o progresso da agricultura no estado do Tocantins, oferecendo uma abordagem simples e objetiva.
+Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos Cultivos" (https://github.com/arthurpestana/earthtech-app.git) que tem como objetivo desenvolver uma plataforma de Internet das Coisas (IoT) para agricultura inteligente. Esta API permite aos usuários consultar dados atualizados do sistema ZARC do governo federal para exibir informações de mapeamento referente a zoneamento agrícola na região do Tocantins. O principal objetivo é promover inovação para o progresso da agricultura no estado do Tocantins, oferecendo uma abordagem simples e objetiva.
 
 ## Tecnologias Utilizadas:
 
@@ -16,4 +16,8 @@ Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos C
 ```
 ./mvnw spring-boot:run
 ```
+Observação:
+`` Esta API está em desenvolvimento e sofre alterações frequentes. ``
+
+
 
