@@ -49,7 +49,6 @@ public class Zoneamento {
         this.cultura = cultura;
     }
 
-
     public String getMunicipio() {
         return municipio;
     }
