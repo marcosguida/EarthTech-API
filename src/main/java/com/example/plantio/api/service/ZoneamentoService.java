@@ -5,6 +5,8 @@ import com.example.plantio.api.repository.ZoneamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
+
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -25,26 +27,19 @@ public class ZoneamentoService {
         return rep.findById(id);
     }
 
-    public Iterable<Zoneamento> getZoneamentoBySafra(String safra) {
+    public List<Zoneamento> getZoneamentoBySafra(String safra) {
         return rep.findBySafra(safra);
     }
 
-    public Iterable<Zoneamento> getZoneamentoByMunicipio(String municipio) {
-        return rep.findByMunicipio(municipio);
-    }
-    public Iterable<Zoneamento> getZoneamentoByMicrorrregiao(String microrrregiao) {
-        return rep.findByMicrorrregiao(microrrregiao);
-    }
+    public List<Zoneamento> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio); }
 
-    public Iterable<Zoneamento> getZoneamentoByCultura(String cultura) {
-        return rep.findByCultura(cultura);
-    }
+    public List<Zoneamento> getZoneamentoByMicrorrregiao(String microrrregiao) { return rep.findByMicrorrregiao(microrrregiao); }
 
-    public Iterable<Zoneamento> getZoneamentoBySolo(String solo) {
-        return rep.findBySolo(solo);
-    }
-    public Zoneamento insert(Zoneamento zoneamento) {
-        Assert.isNull(zoneamento.getId(),"Não foi possível inserir o registro de zoneamento!");
+    public List<Zoneamento> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura); }
+
+    public List<Zoneamento> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo); }
+
+    public Zoneamento insert(Zoneamento zoneamento) { Assert.isNull(zoneamento.getId(),"Não foi possível inserir o registro de zoneamento!");
         return rep.save(zoneamento);
     }
 
