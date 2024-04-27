@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 /**
- * @author marcos
+ * @author Marcos Ribeiro
  */
 
 @Entity
