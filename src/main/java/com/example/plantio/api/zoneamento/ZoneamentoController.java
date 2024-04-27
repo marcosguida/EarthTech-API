@@ -1,5 +1,6 @@
 package com.example.plantio.api.zoneamento;
 
+import com.example.plantio.api.dto.ZoneamentoDTO;
 import com.example.plantio.api.model.Zoneamento;
 import com.example.plantio.api.service.ZoneamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,45 +26,45 @@ public class ZoneamentoController {
 
     // MÉTODO - GET
     @GetMapping()
-    public ResponseEntity<Iterable<Zoneamento>> get(){
+    public ResponseEntity get(){
         return ResponseEntity.ok(service.getZoneamento());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <Zoneamento> zoneamento = service.getZoneamentoById(id);
+        Optional <ZoneamentoDTO> zoneamento = service.getZoneamentoById(id);
         return zoneamento.isPresent() ? ResponseEntity.ok(zoneamento.get()) : ResponseEntity.notFound().build();
 
     }
 
     @GetMapping("/safra/{safra}")
     public ResponseEntity getZoneamentoBySafra(@PathVariable("safra") String safra){
-        List<Zoneamento> zoneamentos = service.getZoneamentoBySafra(safra);
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoBySafra(safra);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
     @GetMapping("/cultura/{cultura}")
     public ResponseEntity getZoneamentoByCultura(@PathVariable("cultura") String cultura){
-        List<Zoneamento> zoneamentos = service.getZoneamentoByCultura(cultura);
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByCultura(cultura);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
     @GetMapping("/municipio/{municipio}")
     public ResponseEntity getZoneamentoByMunicipio(@PathVariable("municipio") String municipio){
-        List<Zoneamento> zoneamentos = service.getZoneamentoByMunicipio(municipio);
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByMunicipio(municipio);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
     @GetMapping("/microrrregiao/{microrrregiao}")
-    public ResponseEntity getZoneamentoByMicrorrregiao(@PathVariable("microrrregiao") String microrrregiao){
-        List<Zoneamento> zoneamentos = service.getZoneamentoByMicrorrregiao(microrrregiao);
+    public ResponseEntity<List<ZoneamentoDTO>> getZoneamentoByMicrorrregiao(@PathVariable("microrrregiao") String microrrregiao){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByMicrorrregiao(microrrregiao);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
     @GetMapping("/solo/{solo}")
-    public ResponseEntity getZoneamentoBySolo(@PathVariable("solo") String solo){
-        List<Zoneamento> zoneamentos = service.getZoneamentoBySolo(solo);
+    public ResponseEntity<List<ZoneamentoDTO>> getZoneamentoBySolo(@PathVariable("solo") String solo){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoBySolo(solo);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
