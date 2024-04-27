@@ -9,9 +9,13 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
+
+import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 /**
  * @author marcos
@@ -71,23 +75,36 @@ public class ZoneamentoController {
 
     // MÉTODO - POST
     @PostMapping
-    public String MÉTODO_post(@RequestBody Zoneamento zoneamento){
-        Zoneamento zo = service.insert(zoneamento);
-        return "Informaçẽos de zonemanento salvas com sucesso! ID: " + zo.getId() + ResponseEntity.status(HttpStatus.CREATED).body(zo);
+    public ResponseEntity MÉTODO_post(@RequestBody Zoneamento zoneamento){
+
+        try{
+            ZoneamentoDTO zo = service.insert(zoneamento);
+            URI location = getUri(zo.getId());
+            return ResponseEntity.created(location).build();
+        }
+        catch (Exception ex){
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    private URI getUri(Long id){
+        return ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(id).toUri();
     }
 
     // MÉTODO - PUT
     @PutMapping("/{id}")
-    public String MÉTODO_put(@PathVariable("id") Long id, @RequestBody Zoneamento zoneamento){
-        Zoneamento zo = service.update(zoneamento, id);
-        return "Informações de zoneamento atualizadas com sucesso! ID: " + zo.getId();
+    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Zoneamento zoneamento){
+
+        zoneamento.setId(id);
+        ZoneamentoDTO zo = service.update(zoneamento, id);
+        return zo != null ? ResponseEntity.ok(zo) : ResponseEntity.notFound().build();
     }
 
     // MÉTODO - DELETE
     @DeleteMapping("/{id}")
-    public String MÉTODO_delete(@PathVariable("id") Long id){
-        service.delete(id);
-        return "Zonemanento deletado com sucesso!";
-    }
+    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
 
+        boolean ok = service.delete(id);
+        return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();
+    }
 }
