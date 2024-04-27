@@ -3,6 +3,7 @@ package com.example.plantio.api.service;
 import com.example.plantio.api.dto.ZoneamentoDTO;
 import com.example.plantio.api.model.Zoneamento;
 import com.example.plantio.api.repository.ZoneamentoRepository;
+import com.example.plantio.api.zoneamento.ZoneamentoController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
@@ -35,11 +36,11 @@ public class ZoneamentoService {
 
     public List<ZoneamentoDTO> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public Zoneamento insert(Zoneamento zoneamento) { Assert.isNull(zoneamento.getId(),"Não foi possível inserir o registro de zoneamento!");
-        return rep.save(zoneamento);
+    public ZoneamentoDTO insert(Zoneamento zoneamento) { Assert.isNull(zoneamento.getId(),"Não foi possível inserir o registro de zoneamento!");
+        return ZoneamentoDTO.create(rep.save(zoneamento));
     }
 
-    public Zoneamento update(Zoneamento zoneamento, Long id) {
+    public ZoneamentoDTO update(Zoneamento zoneamento, Long id) {
         Assert.notNull(id,"Não foi possível atualizar o registro de zoneamento");
 
         // Busca as informações de zoneamento no banco de dados
@@ -58,15 +59,17 @@ public class ZoneamentoService {
             // Atualiza o zoneamento
             rep.save(db);
 
-            return db;
+            return ZoneamentoDTO.create(db);
         } else {
             throw new RuntimeException("Não foi possível atualizar o registro de zoneamento! ");
         }
     }
 
-    public void delete(Long id) {
+    public boolean delete(Long id) {
         if(getZoneamentoById(id).isPresent()) {
             rep.deleteById(id);
+            return true;
         }
+        return false;
     }
 }
