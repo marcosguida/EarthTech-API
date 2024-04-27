@@ -1,5 +1,6 @@
 package com.example.plantio.api.service;
 
+import com.example.plantio.api.dto.ZoneamentoDTO;
 import com.example.plantio.api.model.Zoneamento;
 import com.example.plantio.api.repository.ZoneamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +9,10 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
- * @author marcos
+ * @author Marcos Ribeiro
  */
 
 @Service
@@ -19,25 +21,19 @@ public class ZoneamentoService {
     @Autowired
     private ZoneamentoRepository rep;
 
-    public Iterable<Zoneamento> getZoneamento() {
-        return rep.findAll();
-    }
+    public List<Object> getZoneamento() { return rep.findAll().stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); };
 
-    public Optional<Zoneamento> getZoneamentoById(Long id) {
-        return rep.findById(id);
-    }
+    public Optional<ZoneamentoDTO> getZoneamentoById(Long id) { return rep.findById(id).map(ZoneamentoDTO::create); }
 
-    public List<Zoneamento> getZoneamentoBySafra(String safra) {
-        return rep.findBySafra(safra);
-    }
+    public List<ZoneamentoDTO> getZoneamentoBySafra(String safra) { return rep.findBySafra(safra).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());}
 
-    public List<Zoneamento> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio); }
+    public List<ZoneamentoDTO> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<Zoneamento> getZoneamentoByMicrorrregiao(String microrrregiao) { return rep.findByMicrorrregiao(microrrregiao); }
+    public List<ZoneamentoDTO> getZoneamentoByMicrorrregiao(String microrrregiao) { return rep.findByMicrorrregiao(microrrregiao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<Zoneamento> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura); }
+    public List<ZoneamentoDTO> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<Zoneamento> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo); }
+    public List<ZoneamentoDTO> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public Zoneamento insert(Zoneamento zoneamento) { Assert.isNull(zoneamento.getId(),"Não foi possível inserir o registro de zoneamento!");
         return rep.save(zoneamento);
@@ -69,8 +65,7 @@ public class ZoneamentoService {
     }
 
     public void delete(Long id) {
-        Optional<Zoneamento> zoneamento = rep.getZoneamentoById(id);
-        if(zoneamento.isPresent()) {
+        if(getZoneamentoById(id).isPresent()) {
             rep.deleteById(id);
         }
     }
