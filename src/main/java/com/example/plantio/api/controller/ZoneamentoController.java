@@ -1,4 +1,4 @@
-package com.example.plantio.api.zoneamento;
+package com.example.plantio.api.controller;
 
 import com.example.plantio.api.dto.ZoneamentoDTO;
 import com.example.plantio.api.model.Zoneamento;
@@ -6,7 +6,6 @@ import com.example.plantio.api.service.ZoneamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -14,8 +13,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
-
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 /**
  * @author marcos
@@ -61,13 +58,13 @@ public class ZoneamentoController {
     }
 
     @GetMapping("/microrrregiao/{microrrregiao}")
-    public ResponseEntity<List<ZoneamentoDTO>> getZoneamentoByMicrorrregiao(@PathVariable("microrrregiao") String microrrregiao){
+    public ResponseEntity getZoneamentoByMicrorrregiao(@PathVariable("microrrregiao") String microrrregiao){
         List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByMicrorrregiao(microrrregiao);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
     @GetMapping("/solo/{solo}")
-    public ResponseEntity<List<ZoneamentoDTO>> getZoneamentoBySolo(@PathVariable("solo") String solo){
+    public ResponseEntity getZoneamentoBySolo(@PathVariable("solo") String solo){
         List<ZoneamentoDTO> zoneamentos = service.getZoneamentoBySolo(solo);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
