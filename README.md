@@ -31,7 +31,8 @@ A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado e
 
 ## Imagens 
 
-
 ## License
+
+API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 
 
