@@ -12,9 +12,14 @@ Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos C
 - [Lombok](https://projectlombok.org/setup/)
 - [Postman](https://www.postman.com/downloads/)
 
+## Features
+
 ## Arquitetura 
 
 A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado em simplicidade, escalabilidade, flexibilidade e confiabilidade.
+
+## Documentação
+
 
 ## Executar a API na IDE
 
@@ -24,5 +29,6 @@ A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado e
 :warning: 
 `` Esta API está em desenvolvimento e sofre alterações frequentes. ``
 
+## Licença 
 
 
