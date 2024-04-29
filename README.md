@@ -29,6 +29,9 @@ A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado e
 :warning: 
 `` Esta API está em desenvolvimento e sofre alterações frequentes. ``
 
-## Licença 
+## Imagens 
+
+
+## License
 
 
