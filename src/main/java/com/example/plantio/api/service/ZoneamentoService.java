@@ -1,6 +1,7 @@
 package com.example.plantio.api.service;
 
 import com.example.plantio.api.dto.ZoneamentoDTO;
+import com.example.plantio.api.exception.ObjectNotFoundException;
 import com.example.plantio.api.model.Zoneamento;
 import com.example.plantio.api.repository.ZoneamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class ZoneamentoService {
 
     public List<Object> getZoneamento() { return rep.findAll().stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); };
 
-    public Optional<ZoneamentoDTO> getZoneamentoById(Long id) { return rep.findById(id).map(ZoneamentoDTO::create); }
+    public ZoneamentoDTO getZoneamentoById(Long id) { return rep.findById(id).map(ZoneamentoDTO::create).orElseThrow(() -> new ObjectNotFoundException("Zoneamento não encontreado"));}
 
     public List<ZoneamentoDTO> getZoneamentoBySafra(String safra) { return rep.findBySafra(safra).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());}
 
@@ -64,11 +65,8 @@ public class ZoneamentoService {
         }
     }
 
-    public boolean delete(Long id) {
-        if(getZoneamentoById(id).isPresent()) {
+    public void delete(Long id) {
             rep.deleteById(id);
-            return true;
-        }
-        return false;
+
     }
 }
