@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -34,8 +33,8 @@ public class ZoneamentoController {
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <ZoneamentoDTO> zoneamento = service.getZoneamentoById(id);
-        return zoneamento.isPresent() ? ResponseEntity.ok(zoneamento.get()) : ResponseEntity.notFound().build();
+        ZoneamentoDTO zoneamento = service.getZoneamentoById(id);
+        return  ResponseEntity.ok(zoneamento);
 
     }
 
@@ -101,7 +100,7 @@ public class ZoneamentoController {
     @DeleteMapping("/{id}")
     public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
 
-        boolean ok = service.delete(id);
-        return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();
+        service.delete(id);
+        return ResponseEntity.ok().build();
     }
 }

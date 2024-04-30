@@ -15,5 +15,4 @@ public class IndexController {
         return "API ErthTech";
     }
 
-
 }
