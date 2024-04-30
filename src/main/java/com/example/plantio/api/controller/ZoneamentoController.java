@@ -17,7 +17,6 @@ import java.util.Optional;
  * @author marcos
  */
 
-@EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 @RestController
 @RequestMapping("/api/zoneamento")
 public class ZoneamentoController {
