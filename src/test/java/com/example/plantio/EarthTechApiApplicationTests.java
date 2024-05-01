@@ -41,9 +41,10 @@ public class EarthTechApiApplicationTests {
         Long id = zo.getId();
         assertNotNull (id);
 
-        zo = service.getZoneamentoById(id);
-        assertNotNull (zo);
+        Optional<ZoneamentoDTO> op = service.getZoneamentoById(id);
+        assertTrue (op.isPresent());
 
+        zo = op.get();
         assertEquals("Açai", zo.getCultura());
         assertEquals("2024-2025", zo.getSafra());
         assertEquals("Palmas", zo.getMunicipio());
