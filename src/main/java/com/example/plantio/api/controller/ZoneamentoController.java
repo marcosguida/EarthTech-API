@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -23,6 +24,7 @@ public class ZoneamentoController {
     @Autowired
     private ZoneamentoService service;
 
+
     // MÉTODO - GET
     @GetMapping()
     public ResponseEntity get(){
@@ -32,8 +34,8 @@ public class ZoneamentoController {
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        ZoneamentoDTO zoneamento = service.getZoneamentoById(id);
-        return  ResponseEntity.ok(zoneamento);
+        Optional <ZoneamentoDTO> zoneamento = service.getZoneamentoById(id);
+        return zoneamento.isPresent() ? ResponseEntity.ok(zoneamento.get()) : ResponseEntity.notFound().build();
 
     }
 
@@ -86,6 +88,7 @@ public class ZoneamentoController {
         return ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(id).toUri();
     }
 
+
     // MÉTODO - PUT
     @PutMapping("/{id}")
     public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Zoneamento zoneamento){
@@ -95,11 +98,12 @@ public class ZoneamentoController {
         return zo != null ? ResponseEntity.ok(zo) : ResponseEntity.notFound().build();
     }
 
+
     // MÉTODO - DELETE
     @DeleteMapping("/{id}")
     public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
 
-        service.delete(id);
-        return ResponseEntity.ok().build();
+        boolean ok = service.delete(id);
+        return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();
     }
 }
