@@ -20,8 +20,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/zoneamento")
-@EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
-
 public class ZoneamentoController {
     @Autowired
     private ZoneamentoService service;
