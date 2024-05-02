@@ -22,7 +22,7 @@ This API is part of the "EarthTech: Intelligent Platform for Small Crops" projec
 - CRUD for information on  ``"safra", "cultura" , "municipio" , "microrrregiao", "solo"``.
 
 
-## Usages
+## Usages and URI
 
 -- colocar como fazer o download  e como usar
 
@@ -79,5 +79,7 @@ API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 #### **Marcos Guida**:
 - Email: ribeiroguidam@gmail.com
 - Linkedln: [Linkedln](https://www.linkedin.com/in/marcos-ribeiro-guida/)
+- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcos.ribeirog?igsh=MWhvaDViZ3Jid2IyNw%3D%3D&utm_source=qr)
+
 
 
