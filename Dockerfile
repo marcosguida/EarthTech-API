@@ -9,3 +9,4 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY --from=build /usr/src/app/target/EarthTech-API-0.0.1-SNAPSHOT.jar app.jar
 CMD ["java", "-jar", "app.jar"]
+
