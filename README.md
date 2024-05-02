@@ -18,8 +18,13 @@ This API is part of the "EarthTech: Intelligent Platform for Small Crops" projec
 
 
 ## Features
+- Displays update data on agricultural zoning in the state of Tocantins, Brazil.
+- CRUD for information on  ``"safra", "cultura" , "municipio" , "microrrregiao", "solo"``.
+
 
 ## Usages
+
+-- colocar como fazer o download  e como usar
 
 #### Postman
 Run the API in Postman: 
@@ -29,6 +34,28 @@ Run the API in Postman:
 
 ## Documentation 📄
 
+### Endpoint
+| Endpoint | Description | Status | 
+| ------ | ------ | ------- |
+| /reddit/search/comment/ | xxxxxxxx | Active |
+
+  <h3>Zoneamento Controller</h3>
+  
+    1. GET /api/zoneamento/{id}
+    # Returns the details of the zoning resource identified by the {id} provided in the URL.
+    
+    2. POST /api/zoneamento/{id}
+    # create a new zoning resource on the server.
+
+    3. DELETE /api/zoneamento/{id}
+    # Remove the zoning resource identified by {id}.
+
+    4. PUT /api/zoneamento/{id}
+    # Updates replaces the zoning resource identified by {id}.
+
+    # Can search by identifying the specific field: 
+    Example: GET /safra/{safra}
+    
 ## Response
 After a successful request, the API returns the following fields in JSON format:
 
@@ -42,8 +69,6 @@ After a successful request, the API returns the following fields in JSON format:
   "solo" : string
 }
 ```
-
-## Imagens 
 
 ## License
 
