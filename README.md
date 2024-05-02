@@ -75,7 +75,7 @@ After a successful request, the API returns the following fields in JSON format:
 API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 
 ## Author
-
+Any contribution or suggestion send me a message
 #### *Marcos Guida*
 - Email: ribeiroguidam@gmail.com
   
