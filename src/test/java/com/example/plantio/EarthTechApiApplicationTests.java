@@ -7,9 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.http.client.MockClientHttpResponse;
-
 import java.util.Optional;
-
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,7 +29,7 @@ public class EarthTechApiApplicationTests {
         zoneamento.setSafra("2024-2025");
         zoneamento.setMunicipio("Palmas");
         zoneamento.setSolo("AD1");
-        zoneamento.setMicrorrregiao("Palmas e Serra do Carmo");
+        zoneamento.setMicrorregiao("Palmas e Serra do Carmo");
 
         //INSERT
         ZoneamentoDTO zo = service.insert (zoneamento);
@@ -49,7 +47,7 @@ public class EarthTechApiApplicationTests {
         assertEquals("2024-2025", zo.getSafra());
         assertEquals("Palmas", zo.getMunicipio());
         assertEquals("AD1", zo.getSolo());
-        assertEquals("Palmas e Serra do Carmo", zo.getMicrorrregiao());
+        assertEquals("Palmas e Serra do Carmo", zo.getmicrorregiao());
 
         // DELETE
         service.delete(id);

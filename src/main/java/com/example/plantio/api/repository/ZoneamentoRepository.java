@@ -19,7 +19,7 @@ public interface ZoneamentoRepository extends JpaRepository<Zoneamento, Long> {
 
     List<Zoneamento> findByMunicipio(String municipio);
 
-    List<Zoneamento> findByMicrorrregiao(String microrrregiao);
+    List<Zoneamento> findBymicrorregiao(String microrregiao);
 
     List<Zoneamento> findBySolo(String solo);
 
