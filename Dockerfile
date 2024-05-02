@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 ADD . /usr/src/app
 RUN mvn package
 
+EXPOSE 8080
+
 FROM eclipse-temurin:18-jdk
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
