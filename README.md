@@ -14,11 +14,27 @@ Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos C
 
 ## Features
 
+## Usages
+
 ## Arquitetura 
 
 A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado em simplicidade, escalabilidade, flexibilidade e confiabilidade.
 
 ## Documentação
+
+## Resposta
+A API retorna, após uma solicitação com sucesso, em formato JSON os seguintes campos:
+
+```js
+{
+  "id" : long,
+  "safra" : string,
+  "cultura" : string,
+  "municipio" : string,
+  "microrrregiao" : string,
+  "solo" : string
+}
+```
 
 
 ## Executar a API na IDE
@@ -26,8 +42,6 @@ A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado e
 ```
 ./mvnw spring-boot:run
 ```
-:warning: 
-`` Esta API está em desenvolvimento e sofre alterações frequentes. ``
 
 ## Imagens 
 
@@ -35,4 +49,5 @@ A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado e
 
 API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 
+### Author
 
