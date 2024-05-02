@@ -65,7 +65,7 @@ After a successful request, the API returns the following fields in JSON format:
   "safra" : string,
   "cultura" : string,
   "municipio" : string,
-  "microrrregiao" : string,
+  "microrregiao" : string,
   "solo" : string
 }
 ```
