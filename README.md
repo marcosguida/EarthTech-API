@@ -37,12 +37,12 @@ Run the API in Postman:
 ### Endpoint
 | Endpoint | Description | Status | 
 | ------ | ------ | ------- |
-| /reddit/search/comment/ | xxxxxxxx | Active |
+| /reddit/search/comment/ | xxxxxxxx | Active ✅ |
 
   <h3>Zoneamento Controller</h3>
   
-    1. GET /api/zoneamento/{id}
-    # Returns the details of the zoning resource identified by the {id} provided in the URL.
+    1. GET /api/zoneamento
+    # Returns the details of the zoning resource.
     
     2. POST /api/zoneamento/{id}
     # create a new zoning resource on the server.
