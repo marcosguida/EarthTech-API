@@ -17,7 +17,7 @@ public class ZoneamentoDTO {
         this.safra = zoneamento.getSafra();
         this.cultura = zoneamento.getCultura();
         this.municipio = zoneamento.getMunicipio();
-        this.microrregiao = zoneamento.getmicrorregiao();
+        this.microrregiao = zoneamento.getMicrorregiao();
         this.solo = zoneamento.getSolo();
     }
 
