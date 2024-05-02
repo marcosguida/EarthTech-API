@@ -57,11 +57,11 @@ public class Zoneamento {
         this.municipio = municipio;
     }
 
-    public String getmicrorregiao() {
+    public String getMicrorregiao() {
         return microrregiao;
     }
 
-    public void setmicrorregiao(String microrregiao) {
+    public void setMicrorregiao(String microrregiao) {
         this.microrregiao = microrregiao;
     }
 

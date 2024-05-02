@@ -51,7 +51,7 @@ public class ZoneamentoService {
             db.setSafra(zoneamento.getSafra());
             db.setCultura(zoneamento.getCultura());
             db.setMunicipio(zoneamento.getMunicipio());
-            db.setmicrorregiao(zoneamento.getmicrorregiao());
+            db.setMicrorregiao(zoneamento.getMicrorregiao());
             db.setSolo(zoneamento.getSolo());
             System.out.println("Zoneamento id " + db.getId());
 

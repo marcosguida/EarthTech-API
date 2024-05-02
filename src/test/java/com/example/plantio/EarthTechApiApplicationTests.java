@@ -47,7 +47,7 @@ public class EarthTechApiApplicationTests {
         assertEquals("2024-2025", zo.getSafra());
         assertEquals("Palmas", zo.getMunicipio());
         assertEquals("AD1", zo.getSolo());
-        assertEquals("Palmas e Serra do Carmo", zo.getmicrorregiao());
+        assertEquals("Palmas e Serra do Carmo", zo.getMicrorregiao());
 
         // DELETE
         service.delete(id);
