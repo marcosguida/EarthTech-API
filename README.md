@@ -1,7 +1,7 @@
 # EarthTech-API
 ![License: MIT](https://img.shields.io/github/license/mainvest/vue-simple-icons)
 
-This API is part of the "EarthTech: Intelligent Platform for Small Crops" project (https://github.com/arthurpestana/earthtech-app.git) which aims to develop an Internet of Things (IoT) platform for intelligent agriculture. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information regarding agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
+EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for agricultural crops. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information relating to agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
 
 ## ⚒️ Technologies
 
