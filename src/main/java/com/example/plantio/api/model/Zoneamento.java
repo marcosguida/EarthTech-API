@@ -18,15 +18,15 @@ public class Zoneamento {
     private String safra;
     private String cultura;
     private String municipio;
-    private String microrrregiao;
+    private String microrregiao;
     private String solo;
 
-    public Zoneamento(Long id, String safra, String cultura, String municipio, String microrrregiao, String solo) {
+    public Zoneamento(Long id, String safra, String cultura, String municipio, String microrregiao, String solo) {
         this.id = id;
         this.safra = safra;
         this.cultura = cultura;
         this.municipio = municipio;
-        this.microrrregiao = microrrregiao;
+        this.microrregiao = microrregiao;
         this.solo = solo;
     }
 
@@ -57,12 +57,12 @@ public class Zoneamento {
         this.municipio = municipio;
     }
 
-    public String getMicrorrregiao() {
-        return microrrregiao;
+    public String getmicrorregiao() {
+        return microrregiao;
     }
 
-    public void setMicrorrregiao(String microrrregiao) {
-        this.microrrregiao = microrrregiao;
+    public void setmicrorregiao(String microrregiao) {
+        this.microrregiao = microrregiao;
     }
 
     public String getSolo() {

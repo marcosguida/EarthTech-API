@@ -29,7 +29,7 @@ public class ZoneamentoService {
 
     public List<ZoneamentoDTO> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<ZoneamentoDTO> getZoneamentoByMicrorrregiao(String microrrregiao) { return rep.findByMicrorrregiao(microrrregiao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
+    public List<ZoneamentoDTO> getZoneamentoBymicrorregiao(String microrregiao) { return rep.findBymicrorregiao(microrregiao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public List<ZoneamentoDTO> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
@@ -51,7 +51,7 @@ public class ZoneamentoService {
             db.setSafra(zoneamento.getSafra());
             db.setCultura(zoneamento.getCultura());
             db.setMunicipio(zoneamento.getMunicipio());
-            db.setMicrorrregiao(zoneamento.getMicrorrregiao());
+            db.setmicrorregiao(zoneamento.getmicrorregiao());
             db.setSolo(zoneamento.getSolo());
             System.out.println("Zoneamento id " + db.getId());
 

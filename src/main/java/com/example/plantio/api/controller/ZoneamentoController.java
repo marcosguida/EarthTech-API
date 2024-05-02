@@ -57,9 +57,9 @@ public class ZoneamentoController {
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
-    @GetMapping("/microrrregiao/{microrrregiao}")
-    public ResponseEntity getZoneamentoByMicrorrregiao(@PathVariable("microrrregiao") String microrrregiao){
-        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByMicrorrregiao(microrrregiao);
+    @GetMapping("/microrregiao/{microrregiao}")
+    public ResponseEntity getZoneamentoBymicrorregiao(@PathVariable("microrregiao") String microrregiao){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoBymicrorregiao(microrregiao);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
