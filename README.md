@@ -1,29 +1,29 @@
 # EarthTech-API
 ![License: MIT](https://img.shields.io/github/license/mainvest/vue-simple-icons)
 
-Esta API faz parte do projeto "EarthTech: Plataforma Inteligente para Pequenos Cultivos" (https://github.com/arthurpestana/earthtech-app.git) que tem como objetivo desenvolver uma plataforma de Internet das Coisas (IoT) para agricultura inteligente. Esta API permite aos usuários consultar dados atualizados do sistema ZARC do governo federal para exibir informações de mapeamento referente a zoneamento agrícola na região do Tocantins. O principal objetivo é promover inovação para o progresso da agricultura no estado do Tocantins, oferecendo uma abordagem simples e objetiva.
+This API is part of the "EarthTech: Intelligent Platform for Small Crops" project (https://github.com/arthurpestana/earthtech-app.git) which aims to develop an Internet of Things (IoT) platform for intelligent agriculture. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information regarding agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
 
-## Tecnologias Utilizadas:
+## Technologies:
 
-- [Spring Boot](https://docs.spring.io/spring-boot/installing.html)
-- [Maven](https://maven.apache.org/download.cgi)
-- [MySQL](https://dev.mysql.com/downloads/installer/)
-- [Hibernate](https://hibernate.org/orm/documentation/getting-started/)
-- [Lombok](https://projectlombok.org/setup/)
-- [Postman](https://www.postman.com/downloads/)
+| Technology | Documentation / Download |
+|------------|------------------------------|
+| Spring Boot | [Documentation](https://docs.spring.io/spring-boot/installing.html) |
+| Maven | [Download](https://maven.apache.org/download.cgi) |
+| MySQL | [Download](https://dev.mysql.com/downloads/installer/) |
+| Hibernate | [Documentation](https://hibernate.org/orm/documentation/getting-started/) |
+| Lombok | [Setup](https://projectlombok.org/setup/) |
+| Postman | [Download](https://www.postman.com/downloads/) |
+| JUnit 5 | [Documentation](https://junit.org/junit5/) |
+
 
 ## Features
 
 ## Usages
 
-## Arquitetura 
+## Documentation
 
-A API do projeto EarthTech segue os princípios da arquitetura RESTful, focado em simplicidade, escalabilidade, flexibilidade e confiabilidade.
-
-## Documentação
-
-## Resposta
-A API retorna, após uma solicitação com sucesso, em formato JSON os seguintes campos:
+## Response
+After a successful request, the API returns the following fields in JSON format:
 
 ```js
 {
@@ -34,13 +34,6 @@ A API retorna, após uma solicitação com sucesso, em formato JSON os seguintes
   "microrrregiao" : string,
   "solo" : string
 }
-```
-
-
-## Executar a API na IDE
-
-```
-./mvnw spring-boot:run
 ```
 
 ## Imagens 
