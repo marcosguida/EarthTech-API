@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +20,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/zoneamento")
 @EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
-
 public class ZoneamentoController {
     @Autowired
     private ZoneamentoService service;
