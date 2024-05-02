@@ -44,3 +44,8 @@ API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
 
 ### Author
 
+#### **Marcos Guida**:
+- Email: ribeiroguidam@gmail.com
+- Linkedln: [Linkedln](https://www.linkedin.com/in/marcos-ribeiro-guida/)
+
+
