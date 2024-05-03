@@ -13,4 +13,4 @@ EXPOSE 8080
 
 COPY --from=build /target/EarthTech-API-0.0.1-SNAPSHOT.jar api.jar
 
-ENTRYPOINT["java", "-jar", "api.jar"]
+ENTRYPOINT[ "java", "-jar", "api.jar" ]
