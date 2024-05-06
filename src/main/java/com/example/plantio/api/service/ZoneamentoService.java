@@ -27,11 +27,13 @@ public class ZoneamentoService {
 
     public List<ZoneamentoDTO> getZoneamentoBySafra(String safra) { return rep.findBySafra(safra).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());}
 
+    public List<ZoneamentoDTO> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
+
+    public List<ZoneamentoDTO> getZoneamentoByDescricao(String descricao) { return rep.findByDescricao(descricao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
+
     public List<ZoneamentoDTO> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public List<ZoneamentoDTO> getZoneamentoBymicrorregiao(String microrregiao) { return rep.findBymicrorregiao(microrregiao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
-
-    public List<ZoneamentoDTO> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public List<ZoneamentoDTO> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
@@ -50,6 +52,7 @@ public class ZoneamentoService {
             // Copia as propriedades para o objeto 'db'
             db.setSafra(zoneamento.getSafra());
             db.setCultura(zoneamento.getCultura());
+            db.setDescricao(zoneamento.getDescricao());
             db.setMunicipio(zoneamento.getMunicipio());
             db.setMicrorregiao(zoneamento.getMicrorregiao());
             db.setSolo(zoneamento.getSolo());
