@@ -24,6 +24,10 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## Usages and URI
 
+#### URI
+
+Link: http://ec2-18-236-166-131.us-west-2.compute.amazonaws.com:8080/api/zoneamento
+
 #### Postman
 Run the API in Postman: 
 
@@ -35,7 +39,7 @@ Run the API in Postman:
 ### Endpoint
 | Endpoint | Status | 
 | ------ | ------- |
-| /api/zoneamento (http://ec2-18-236-166-131.us-west-2.compute.amazonaws.com:8080/api/zoneamento) | Active ✅ |
+| /api/zoneamento | Active ✅ |
 
 
   <h3>Zoneamento Controller</h3>
