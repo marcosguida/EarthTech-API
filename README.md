@@ -19,7 +19,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## Features
 - Displays update data on agricultural zoning in the state of Tocantins, Brazil.
-- CRUD for information on  ``"safra", "cultura" , "municipio" , "microrrregiao", "solo"``.
+- CRUD for information on  ``"safra", "cultura" , "descricao" , "municipio" , "microrrregiao", "solo"``.
 
 
 ## Usages and URI
@@ -67,6 +67,7 @@ After a successful request, the API returns the following fields in JSON format:
   "id" : long,
   "safra" : string,
   "cultura" : string,
+  "descricao" : string,
   "municipio" : string,
   "microrregiao" : string,
   "solo" : string
