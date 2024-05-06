@@ -26,18 +26,9 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 -- colocar como fazer o download  e como usar
 
-#### Postman
-Run the API in Postman: 
-
-[![Run in Postman](https://run-beta.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/11144369-e27366d6-7699-46f4-b58e-2b2b2e637be5-Szf6Z9B3)
-
 
 ## Documentation 📄
 
-### Endpoint
-| Endpoint | Description | Status | 
-| ------ | ------ | ------- |
-| /api/zoneamento | xxxxxxxx | Active ✅ |
 
   <h3>Zoneamento Controller</h3>
   
