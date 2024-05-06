@@ -17,14 +17,17 @@ public class Zoneamento {
     private Long id;
     private String safra;
     private String cultura;
+    private String descricao;
     private String municipio;
     private String microrregiao;
     private String solo;
 
-    public Zoneamento(Long id, String safra, String cultura, String municipio, String microrregiao, String solo) {
+
+    public Zoneamento(Long id, String safra, String cultura, String descricao, String municipio, String microrregiao, String solo) {
         this.id = id;
         this.safra = safra;
         this.cultura = cultura;
+        this.descricao = descricao;
         this.municipio = municipio;
         this.microrregiao = microrregiao;
         this.solo = solo;
@@ -80,5 +83,9 @@ public class Zoneamento {
     public Long getId() {
         return id;
     }
+
+    public String getDescricao() { return descricao; }
+
+    public void setDescricao(String descricao) { this.descricao = descricao; }
 
 }

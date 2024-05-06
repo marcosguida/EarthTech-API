@@ -51,6 +51,12 @@ public class ZoneamentoController {
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
+    @GetMapping("/descricao/{descricao}")
+    public ResponseEntity getZoneamentoByDescricao(@PathVariable("descricao") String descricao){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByDescricao(descricao);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
     @GetMapping("/municipio/{municipio}")
     public ResponseEntity getZoneamentoByMunicipio(@PathVariable("municipio") String municipio){
         List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByMunicipio(municipio);
