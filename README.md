@@ -37,7 +37,7 @@ Run the API in Postman:
 ### Endpoint
 | Endpoint | Description | Status | 
 | ------ | ------ | ------- |
-| /reddit/search/comment/ | xxxxxxxx | Active ✅ |
+| /api/zoneamento | xxxxxxxx | Active ✅ |
 
   <h3>Zoneamento Controller</h3>
   
