@@ -31,7 +31,7 @@ Link: http://ec2-18-236-166-131.us-west-2.compute.amazonaws.com:8080/api/zoneame
 #### Postman
 Run the API in Postman: 
 
-[![Run in Postman](https://run-beta.pstmn.io/button.svg)](http://ec2-18-236-166-131.us-west-2.compute.amazonaws.com:8080/api/zoneamento)
+[![Run in Postman](https://run-beta.pstmn.io/button.svg)](https://earthtechapi.up.railway.app/api/zoneamento)
 
 
 ## Documentation 📄
