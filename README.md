@@ -26,7 +26,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 #### URI
 
-Link:https://earthtechapi.up.railway.app/api/zoneamento
+https://earthtechapi.up.railway.app/api/zoneamento
 
 #### Postman
 Run the API in Postman: 
