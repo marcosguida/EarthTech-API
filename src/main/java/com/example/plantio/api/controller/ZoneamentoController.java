@@ -75,6 +75,222 @@ public class ZoneamentoController {
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
+    @GetMapping("/risk1/{risk1}")
+    public ResponseEntity getZoneamentoByRisk1(@PathVariable("risk1") int risk1) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk1(risk1);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk2/{risk2}")
+    public ResponseEntity getZoneamentoByRisk2(@PathVariable("risk2") int risk2) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk2(risk2);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk3/{risk3}")
+    public ResponseEntity getZoneamentoByRisk3(@PathVariable("risk3") int risk3) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk3(risk3);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk4/{risk4}")
+    public ResponseEntity getZoneamentoByRisk4(@PathVariable("risk4") int risk4) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk4(risk4);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk5/{risk5}")
+    public ResponseEntity getZoneamentoByRisk5(@PathVariable("risk5") int risk5) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk5(risk5);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk6/{risk6}")
+    public ResponseEntity getZoneamentoByRisk6(@PathVariable("risk6") int risk6) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk6(risk6);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk7/{risk7}")
+    public ResponseEntity getZoneamentoByRisk7(@PathVariable("risk7") int risk7) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk7(risk7);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk8/{risk8}")
+    public ResponseEntity getZoneamentoByRisk8(@PathVariable("risk8") int risk8) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk8(risk8);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk9/{risk9}")
+    public ResponseEntity getZoneamentoByRisk9(@PathVariable("risk9") int risk9) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk9(risk9);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk10/{risk10}")
+    public ResponseEntity getZoneamentoByRisk10(@PathVariable("risk10") int risk10) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk10(risk10);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk11/{risk11}")
+    public ResponseEntity getZoneamentoByRisk11(@PathVariable("risk11") int risk11) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk11(risk11);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk12/{risk12}")
+    public ResponseEntity getZoneamentoByRisk12(@PathVariable("risk12") int risk12) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk12(risk12);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk13/{risk13}")
+    public ResponseEntity getZoneamentoByRisk13(@PathVariable("risk13") int risk13) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk13(risk13);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk14/{risk14}")
+    public ResponseEntity getZoneamentoByRisk14(@PathVariable("risk14") int risk14) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk14(risk14);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk15/{risk15}")
+    public ResponseEntity getZoneamentoByRisk15(@PathVariable("risk15") int risk15) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk15(risk15);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk16/{risk16}")
+    public ResponseEntity getZoneamentoByRisk16(@PathVariable("risk16") int risk16) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk16(risk16);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk17/{risk17}")
+    public ResponseEntity getZoneamentoByRisk17(@PathVariable("risk17") int risk17) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk17(risk17);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk18/{risk18}")
+    public ResponseEntity getZoneamentoByRisk18(@PathVariable("risk18") int risk18) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk18(risk18);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk19/{risk19}")
+    public ResponseEntity getZoneamentoByRisk19(@PathVariable("risk19") int risk19) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk19(risk19);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk20/{risk20}")
+    public ResponseEntity getZoneamentoByRisk20(@PathVariable("risk20") int risk20) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk20(risk20);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk21/{risk21}")
+    public ResponseEntity getZoneamentoByRisk21(@PathVariable("risk21") int risk21) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk21(risk21);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk22/{risk22}")
+    public ResponseEntity getZoneamentoByRisk22(@PathVariable("risk22") int risk22) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk22(risk22);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk23/{risk23}")
+    public ResponseEntity getZoneamentoByRisk23(@PathVariable("risk23") int risk23) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk23(risk23);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk24/{risk24}")
+    public ResponseEntity getZoneamentoByRisk24(@PathVariable("risk24") int risk24) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk24(risk24);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk25/{risk25}")
+    public ResponseEntity getZoneamentoByRisk25(@PathVariable("risk25") int risk25) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk25(risk25);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk26/{risk26}")
+    public ResponseEntity getZoneamentoByRisk26(@PathVariable("risk26") int risk26) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk26(risk26);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk27/{risk27}")
+    public ResponseEntity getZoneamentoByRisk27(@PathVariable("risk27") int risk27) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk27(risk27);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk28/{risk28}")
+    public ResponseEntity getZoneamentoByRisk28(@PathVariable("risk28") int risk28) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk28(risk28);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk29/{risk29}")
+    public ResponseEntity getZoneamentoByRisk29(@PathVariable("risk29") int risk29) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk29(risk29);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk30/{risk30}")
+    public ResponseEntity getZoneamentoByRisk30(@PathVariable("risk30") int risk30) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk30(risk30);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk31/{risk31}")
+    public ResponseEntity getZoneamentoByRisk31(@PathVariable("risk31") int risk31) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk31(risk31);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk32/{risk32}")
+    public ResponseEntity getZoneamentoByRisk32(@PathVariable("risk32") int risk32) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk32(risk32);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk33/{risk33}")
+    public ResponseEntity getZoneamentoByRisk33(@PathVariable("risk33") int risk33) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk33(risk33);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk34/{risk34}")
+    public ResponseEntity getZoneamentoByRisk34(@PathVariable("risk34") int risk34) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk34(risk34);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk35/{risk35}")
+    public ResponseEntity getZoneamentoByRisk35(@PathVariable("risk35") int risk35) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk35(risk35);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
+    @GetMapping("/risk36/{risk36}")
+    public ResponseEntity getZoneamentoByRisk36(@PathVariable("risk36") int risk36) {
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByRisk36(risk36);
+        return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
+    }
+
 
     // MÉTODO - POST
     @PostMapping
