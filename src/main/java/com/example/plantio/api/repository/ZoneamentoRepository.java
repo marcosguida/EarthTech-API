@@ -17,11 +17,11 @@ public interface ZoneamentoRepository extends JpaRepository<Zoneamento, Long> {
 
     List<Zoneamento> findByCultura(String cultura);
 
-    List<Zoneamento> findByDescricao(String descricao);
+    List<Zoneamento> findByUf(String uf);
 
     List<Zoneamento> findByMunicipio(String municipio);
 
-    List<Zoneamento> findBymicrorregiao(String microrregiao);
+    List<Zoneamento> findByGrupo(String grupo);
 
     List<Zoneamento> findBySolo(String solo);
 

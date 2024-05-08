@@ -6,7 +6,6 @@ import com.example.plantio.api.repository.ZoneamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -29,11 +28,11 @@ public class ZoneamentoService {
 
     public List<ZoneamentoDTO> getZoneamentoByCultura(String cultura) { return rep.findByCultura(cultura).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<ZoneamentoDTO> getZoneamentoByDescricao(String descricao) { return rep.findByDescricao(descricao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
+    public List<ZoneamentoDTO> getZoneamentoByUf(String uf) { return rep.findByUf(uf).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public List<ZoneamentoDTO> getZoneamentoByMunicipio(String municipio) { return rep.findByMunicipio(municipio).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<ZoneamentoDTO> getZoneamentoBymicrorregiao(String microrregiao) { return rep.findBymicrorregiao(microrregiao).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
+    public List<ZoneamentoDTO> getZoneamentoByGrupo(String grupo) { return rep.findByGrupo(grupo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
     public List<ZoneamentoDTO> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
@@ -52,9 +51,9 @@ public class ZoneamentoService {
             // Copia as propriedades para o objeto 'db'
             db.setSafra(zoneamento.getSafra());
             db.setCultura(zoneamento.getCultura());
-            db.setDescricao(zoneamento.getDescricao());
+            db.setUf(zoneamento.getUf());
             db.setMunicipio(zoneamento.getMunicipio());
-            db.setMicrorregiao(zoneamento.getMicrorregiao());
+            db.setGrupo(zoneamento.getGrupo());
             db.setSolo(zoneamento.getSolo());
             System.out.println("Zoneamento id " + db.getId());
 

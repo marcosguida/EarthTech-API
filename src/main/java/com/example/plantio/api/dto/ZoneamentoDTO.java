@@ -8,18 +8,18 @@ public class ZoneamentoDTO {
     private Long id;
     private String safra;
     private String cultura;
-    private String descricao;
+    private String uf;
     private String municipio;
-    private String microrregiao;
+    private String grupo;
     private String solo;
 
     public ZoneamentoDTO(Zoneamento zoneamento) {
         this.id = zoneamento.getId();
         this.safra = zoneamento.getSafra();
         this.cultura = zoneamento.getCultura();
-        this.descricao = zoneamento.getDescricao();
+        this.uf = zoneamento.getUf();
         this.municipio = zoneamento.getMunicipio();
-        this.microrregiao = zoneamento.getMicrorregiao();
+        this.grupo = zoneamento.getGrupo();
         this.solo = zoneamento.getSolo();
     }
 
