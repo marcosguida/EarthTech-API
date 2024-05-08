@@ -35,28 +35,16 @@ Run the API in Postman:
 
 ## Documentation 📄
 
-### Endpoint
-| Endpoint | Status | 
-| ------ | ------- |
-| /api/zoneamento | Active ✅ |
-
-
-  <h3>Zoneamento Controller</h3>
+### Endpoints
   
-    1. GET /api/zoneamento
-    # Returns the details of the zoning resource.
-    
-    2. POST /api/zoneamento/{id}
-    # create a new zoning resource on the server.
+| Method | Endpoint                  | Description                                                  |
+|--------|---------------------------|--------------------------------------------------------------|
+| ``GET``    | /api/zoneamento           | Returns the details of the zoning resource.                 |
+| ``POST``   | /api/zoneamento/{id}     | Create a new zoning resource on the server.                 |
+| ``DELETE`` | /api/zoneamento/{id}     | Remove the zoning resource identified by {id}.              |
+| ``PUT``    | /api/zoneamento/{id}     | Updates or replaces the zoning resource identified by {id}.  |
+| Example    | /safra/{safra}           | Can search by identifying the specific field. Example: GET /safra/{safra}. |
 
-    3. DELETE /api/zoneamento/{id}
-    # Remove the zoning resource identified by {id}.
-
-    4. PUT /api/zoneamento/{id}
-    # Updates replaces the zoning resource identified by {id}.
-
-    # Can search by identifying the specific field: 
-    Example: GET /safra/{safra}
     
 ## Response
 After a successful request, the API returns the following fields in JSON format:
