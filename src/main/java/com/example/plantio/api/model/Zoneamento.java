@@ -16,7 +16,6 @@ public class Zoneamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NonNull
     private String safra;
     private String cultura;
     private String uf;
@@ -28,7 +27,7 @@ public class Zoneamento {
     private int risk20, risk21, risk22, risk23, risk24, risk25, risk26, risk27, risk28, risk29;
     private int risk30, risk31, risk32, risk33, risk34, risk35, risk36;
 
-    public Zoneamento(Long id, String safra, String cultura, String uf, String municipio, String grupo, String solo) {
+    public Zoneamento(Long id, String safra, String cultura, String uf, String municipio, String grupo, String solo, int[] risks ) {
         this.id = id;
         this.safra = safra;
         this.cultura = cultura;
@@ -36,6 +35,24 @@ public class Zoneamento {
         this.municipio = municipio;
         this.grupo = grupo;
         this.solo = solo;
+        this.risk1 = risk1; this.risk2 = risk2;
+        this.risk3 = risk3; this.risk4 = risk4;
+        this.risk5 = risk5; this.risk6 = risk6;
+        this.risk7 = risk7; this.risk8 = risk8;
+        this.risk9 = risk9; this.risk10 = risk10;
+        this.risk11 = risk11; this.risk12 = risk12;
+        this.risk13 = risk13; this.risk14 = risk14;
+        this.risk15 = risk15; this.risk16 = risk16;
+        this.risk17 = risk17; this.risk18 = risk18;
+        this.risk19 = risk19; this.risk20 = risk20;
+        this.risk21 = risk21; this.risk22 = risk22;
+        this.risk23 = risk23; this.risk24 = risk24;
+        this.risk25 = risk25; this.risk26 = risk26;
+        this.risk27 = risk27; this.risk28 = risk28;
+        this.risk29 = risk29; this.risk30 = risk30;
+        this.risk31 = risk31; this.risk32 = risk32;
+        this.risk33 = risk33; this.risk34 = risk34;
+        this.risk35 = risk35; this.risk36 = risk36;
     }
 
     public Zoneamento() {
