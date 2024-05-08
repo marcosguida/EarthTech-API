@@ -51,9 +51,9 @@ public class ZoneamentoController {
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
-    @GetMapping("/descricao/{descricao}")
-    public ResponseEntity getZoneamentoByDescricao(@PathVariable("descricao") String descricao){
-        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByDescricao(descricao);
+    @GetMapping("/uf/{uf}")
+    public ResponseEntity getZoneamentoByUf(@PathVariable("uf") String uf){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByUf(uf);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
@@ -63,9 +63,9 @@ public class ZoneamentoController {
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
-    @GetMapping("/microrregiao/{microrregiao}")
-    public ResponseEntity getZoneamentoBymicrorregiao(@PathVariable("microrregiao") String microrregiao){
-        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoBymicrorregiao(microrregiao);
+    @GetMapping("/grupo/{grupo}")
+    public ResponseEntity getZoneamentoByGrupo(@PathVariable("grupo") String grupo){
+        List<ZoneamentoDTO> zoneamentos = service.getZoneamentoByGrupo(grupo);
         return zoneamentos.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(zoneamentos);
     }
 
