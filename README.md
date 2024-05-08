@@ -31,7 +31,7 @@ https://earthtechapi.up.railway.app/api/zoneamento
 #### Postman
 Run the API in Postman: 
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/earthtechapi.up.railway.app/api/zoneamento)|
+[![Postman](https://www.getpostman.com/img/v2/logo-glyph.png)](https://www.getpostman.com/collections/cb987b776b7e5ab67876)
 
 
 ## Documentation 📄
