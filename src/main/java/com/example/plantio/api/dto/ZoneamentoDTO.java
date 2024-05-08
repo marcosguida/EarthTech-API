@@ -12,10 +12,10 @@ public class ZoneamentoDTO {
     private String municipio;
     private String grupo;
     private String solo;
-    private int risk1, risk2, risk3, risk4, risk5, risk6, risk7, risk8, risk9, risk10;
-    private int risk11, risk12, risk13, risk14, risk15, risk16, risk17, risk18, risk19;
-    private int risk20, risk21, risk22, risk23, risk24, risk25, risk26, risk27, risk28, risk29;
-    private int risk30, risk31, risk32, risk33, risk34, risk35, risk36;
+    private Long risk1, risk2, risk3, risk4, risk5, risk6, risk7, risk8, risk9, risk10;
+    private Long risk11, risk12, risk13, risk14, risk15, risk16, risk17, risk18, risk19;
+    private Long risk20, risk21, risk22, risk23, risk24, risk25, risk26, risk27, risk28, risk29;
+    private Long risk30, risk31, risk32, risk33, risk34, risk35, risk36;
 
     public ZoneamentoDTO(Zoneamento zoneamento) {
         this.id = zoneamento.getId();
