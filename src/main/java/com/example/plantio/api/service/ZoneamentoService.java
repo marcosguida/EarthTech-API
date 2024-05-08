@@ -36,147 +36,147 @@ public class ZoneamentoService {
 
     public List<ZoneamentoDTO> getZoneamentoBySolo(String solo) { return rep.findBySolo(solo).stream().map(ZoneamentoDTO::create).collect(Collectors.toList()); }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk1(int risk1) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk1(Long risk1) {
         return rep.findByRisk1(risk1).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk2(int risk2) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk2(Long risk2) {
         return rep.findByRisk2(risk2).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk3(int risk3) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk3(Long risk3) {
         return rep.findByRisk3(risk3).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk4(int risk4) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk4(Long risk4) {
         return rep.findByRisk4(risk4).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk5(int risk5) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk5(Long risk5) {
         return rep.findByRisk5(risk5).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk6(int risk6) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk6(Long risk6) {
         return rep.findByRisk6(risk6).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk7(int risk7) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk7(Long risk7) {
         return rep.findByRisk7(risk7).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk8(int risk8) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk8(Long risk8) {
         return rep.findByRisk8(risk8).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk9(int risk9) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk9(Long risk9) {
         return rep.findByRisk9(risk9).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk10(int risk10) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk10(Long risk10) {
         return rep.findByRisk10(risk10).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk11(int risk11) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk11(Long risk11) {
         return rep.findByRisk11(risk11).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk12(int risk12) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk12(Long risk12) {
         return rep.findByRisk12(risk12).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk13(int risk13) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk13(Long risk13) {
         return rep.findByRisk13(risk13).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk14(int risk14) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk14(Long risk14) {
         return rep.findByRisk14(risk14).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk15(int risk15) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk15(Long risk15) {
         return rep.findByRisk15(risk15).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk16(int risk16) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk16(Long risk16) {
         return rep.findByRisk16(risk16).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk17(int risk17) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk17(Long risk17) {
         return rep.findByRisk17(risk17).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk18(int risk18) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk18(Long risk18) {
         return rep.findByRisk18(risk18).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk19(int risk19) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk19(Long risk19) {
         return rep.findByRisk19(risk19).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk20(int risk20) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk20(Long risk20) {
         return rep.findByRisk20(risk20).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk21(int risk21) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk21(Long risk21) {
         return rep.findByRisk21(risk21).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk22(int risk22) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk22(Long risk22) {
         return rep.findByRisk22(risk22).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk23(int risk23) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk23(Long risk23) {
         return rep.findByRisk23(risk23).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk24(int risk24) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk24(Long risk24) {
         return rep.findByRisk24(risk24).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk25(int risk25) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk25(Long risk25) {
         return rep.findByRisk25(risk25).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk26(int risk26) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk26(Long risk26) {
         return rep.findByRisk26(risk26).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk27(int risk27) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk27(Long risk27) {
         return rep.findByRisk27(risk27).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk28(int risk28) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk28(Long risk28) {
         return rep.findByRisk28(risk28).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk29(int risk29) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk29(Long risk29) {
         return rep.findByRisk29(risk29).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk30(int risk30) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk30(Long risk30) {
         return rep.findByRisk30(risk30).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk31(int risk31) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk31(Long risk31) {
         return rep.findByRisk31(risk31).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk32(int risk32) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk32(Long risk32) {
         return rep.findByRisk32(risk32).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk33(int risk33) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk33(Long risk33) {
         return rep.findByRisk33(risk33).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk34(int risk34) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk34(Long risk34) {
         return rep.findByRisk34(risk34).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk35(int risk35) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk35(Long risk35) {
         return rep.findByRisk35(risk35).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 
-    public List<ZoneamentoDTO> getZoneamentoByRisk36(int risk36) {
+    public List<ZoneamentoDTO> getZoneamentoByRisk36(Long risk36) {
         return rep.findByRisk36(risk36).stream().map(ZoneamentoDTO::create).collect(Collectors.toList());
     }
 

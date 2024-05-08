@@ -22,12 +22,13 @@ public class Zoneamento {
     private String municipio;
     private String grupo;
     private String solo;
-    private int risk1, risk2, risk3, risk4, risk5, risk6, risk7, risk8, risk9, risk10;
-    private int risk11, risk12, risk13, risk14, risk15, risk16, risk17, risk18, risk19;
-    private int risk20, risk21, risk22, risk23, risk24, risk25, risk26, risk27, risk28, risk29;
-    private int risk30, risk31, risk32, risk33, risk34, risk35, risk36;
+    private Long risk1, risk2, risk3, risk4, risk5, risk6, risk7, risk8, risk9, risk10;
+    private Long risk11, risk12, risk13, risk14, risk15, risk16, risk17, risk18, risk19;
+    private Long risk20, risk21, risk22, risk23, risk24, risk25, risk26, risk27, risk28, risk29;
+    private Long risk30, risk31, risk32, risk33, risk34, risk35, risk36;
 
-    public Zoneamento(Long id, String safra, String cultura, String uf, String municipio, String grupo, String solo, int[] risks ) {
+    public Zoneamento(Long id, String safra, String cultura, String uf, String municipio, String grupo, String solo, Long risk1, Long risk2, Long risk3, Long risk4, Long risk5, Long risk6, Long risk7, Long risk8, Long risk9, Long risk10, Long risk11, Long risk12, Long risk13, Long risk14, Long risk15, Long risk16, Long risk17, Long risk18, Long risk19, Long risk20, Long risk21, Long risk22, Long risk23, Long risk24, Long risk25, Long risk26, Long risk27, Long risk28, Long risk29, Long risk30, Long risk31, Long risk32, Long risk33, Long risk34, Long risk35, Long risk36) {
+
         this.id = id;
         this.safra = safra;
         this.cultura = cultura;
@@ -110,291 +111,291 @@ public class Zoneamento {
 
     public void setUf(String uf) { this.uf = uf; }
 
-    public int getRisk1() {
+    public Long getRisk1() {
         return risk1;
     }
 
-    public void setRisk1(int risk1) {
+    public void setRisk1(Long risk1) {
         this.risk1 = risk1;
     }
 
-    public int getRisk2() {
+    public Long getRisk2() {
         return risk2;
     }
 
-    public void setRisk2(int risk2) {
+    public void setRisk2(Long risk2) {
         this.risk2 = risk2;
     }
 
-    public int getRisk3() {
+    public Long getRisk3() {
         return risk3;
     }
 
-    public void setRisk3(int risk3) {
+    public void setRisk3(Long risk3) {
         this.risk3 = risk3;
     }
 
-    public int getRisk4() {
+    public Long getRisk4() {
         return risk4;
     }
 
-    public void setRisk4(int risk4) {
+    public void setRisk4(Long risk4) {
         this.risk4 = risk4;
     }
 
-    public int getRisk5() {
+    public Long getRisk5() {
         return risk5;
     }
 
-    public void setRisk5(int risk5) {
+    public void setRisk5(Long risk5) {
         this.risk5 = risk5;
     }
 
-    public int getRisk6() {
+    public Long getRisk6() {
         return risk6;
     }
 
-    public void setRisk6(int risk6) {
+    public void setRisk6(Long risk6) {
         this.risk6 = risk6;
     }
 
-    public int getRisk7() {
+    public Long getRisk7() {
         return risk7;
     }
 
-    public void setRisk7(int risk7) {
+    public void setRisk7(Long risk7) {
         this.risk7 = risk7;
     }
 
-    public int getRisk8() {
+    public Long getRisk8() {
         return risk8;
     }
 
-    public void setRisk8(int risk8) {
+    public void setRisk8(Long risk8) {
         this.risk8 = risk8;
     }
 
-    public int getRisk9() {
+    public Long getRisk9() {
         return risk9;
     }
 
-    public void setRisk9(int risk9) {
+    public void setRisk9(Long risk9) {
         this.risk9 = risk9;
     }
 
-    public int getRisk10() {
+    public Long getRisk10() {
         return risk10;
     }
 
-    public void setRisk10(int risk10) {
+    public void setRisk10(Long risk10) {
         this.risk10 = risk10;
     }
 
-    public int getRisk11() {
+    public Long getRisk11() {
         return risk11;
     }
 
-    public void setRisk11(int risk11) {
+    public void setRisk11(Long risk11) {
         this.risk11 = risk11;
     }
 
-    public int getRisk12() {
+    public Long getRisk12() {
         return risk12;
     }
 
-    public void setRisk12(int risk12) {
+    public void setRisk12(Long risk12) {
         this.risk12 = risk12;
     }
 
-    public int getRisk13() {
+    public Long getRisk13() {
         return risk13;
     }
 
-    public void setRisk13(int risk13) {
+    public void setRisk13(Long risk13) {
         this.risk13 = risk13;
     }
 
-    public int getRisk14() {
+    public Long getRisk14() {
         return risk14;
     }
 
-    public void setRisk14(int risk14) {
+    public void setRisk14(Long risk14) {
         this.risk14 = risk14;
     }
 
-    public int getRisk15() {
+    public Long getRisk15() {
         return risk15;
     }
 
-    public void setRisk15(int risk15) {
+    public void setRisk15(Long risk15) {
         this.risk15 = risk15;
     }
 
-    public int getRisk16() {
+    public Long getRisk16() {
         return risk16;
     }
 
-    public void setRisk16(int risk16) {
+    public void setRisk16(Long risk16) {
         this.risk16 = risk16;
     }
 
-    public int getRisk17() {
+    public Long getRisk17() {
         return risk17;
     }
 
-    public void setRisk17(int risk17) {
+    public void setRisk17(Long risk17) {
         this.risk17 = risk17;
     }
 
-    public int getRisk18() {
+    public Long getRisk18() {
         return risk18;
     }
 
-    public void setRisk18(int risk18) {
+    public void setRisk18(Long risk18) {
         this.risk18 = risk18;
     }
 
-    public int getRisk19() {
+    public Long getRisk19() {
         return risk19;
     }
 
-    public void setRisk19(int risk19) {
+    public void setRisk19(Long risk19) {
         this.risk19 = risk19;
     }
 
-    public int getRisk20() {
+    public Long getRisk20() {
         return risk20;
     }
 
-    public void setRisk20(int risk20) {
+    public void setRisk20(Long risk20) {
         this.risk20 = risk20;
     }
 
-    public int getRisk21() {
+    public Long getRisk21() {
         return risk21;
     }
 
-    public void setRisk21(int risk21) {
+    public void setRisk21(Long risk21) {
         this.risk21 = risk21;
     }
 
-    public int getRisk22() {
+    public Long getRisk22() {
         return risk22;
     }
 
-    public void setRisk22(int risk22) {
+    public void setRisk22(Long risk22) {
         this.risk22 = risk22;
     }
 
-    public int getRisk23() {
+    public Long getRisk23() {
         return risk23;
     }
 
-    public void setRisk23(int risk23) {
+    public void setRisk23(Long risk23) {
         this.risk23 = risk23;
     }
 
-    public int getRisk24() {
+    public Long getRisk24() {
         return risk24;
     }
 
-    public void setRisk24(int risk24) {
+    public void setRisk24(Long risk24) {
         this.risk24 = risk24;
     }
 
-    public int getRisk25() {
+    public Long getRisk25() {
         return risk25;
     }
 
-    public void setRisk25(int risk25) {
+    public void setRisk25(Long risk25) {
         this.risk25 = risk25;
     }
 
-    public int getRisk26() {
+    public Long getRisk26() {
         return risk26;
     }
 
-    public void setRisk26(int risk26) {
+    public void setRisk26(Long risk26) {
         this.risk26 = risk26;
     }
 
-    public int getRisk27() {
+    public Long getRisk27() {
         return risk27;
     }
 
-    public void setRisk27(int risk27) {
+    public void setRisk27(Long risk27) {
         this.risk27 = risk27;
     }
 
-    public int getRisk28() {
+    public Long getRisk28() {
         return risk28;
     }
 
-    public void setRisk28(int risk28) {
+    public void setRisk28(Long risk28) {
         this.risk28 = risk28;
     }
 
-    public int getRisk29() {
+    public Long getRisk29() {
         return risk29;
     }
 
-    public void setRisk29(int risk29) {
+    public void setRisk29(Long risk29) {
         this.risk29 = risk29;
     }
 
-    public int getRisk30() {
+    public Long getRisk30() {
         return risk30;
     }
 
-    public void setRisk30(int risk30) {
+    public void setRisk30(Long risk30) {
         this.risk30 = risk30;
     }
 
-    public int getRisk31() {
+    public Long getRisk31() {
         return risk31;
     }
 
-    public void setRisk31(int risk31) {
+    public void setRisk31(Long risk31) {
         this.risk31 = risk31;
     }
 
-    public int getRisk32() {
+    public Long getRisk32() {
         return risk32;
     }
 
-    public void setRisk32(int risk32) {
+    public void setRisk32(Long risk32) {
         this.risk32 = risk32;
     }
 
-    public int getRisk33() {
+    public Long getRisk33() {
         return risk33;
     }
 
-    public void setRisk33(int risk33) {
+    public void setRisk33(Long risk33) {
         this.risk33 = risk33;
     }
 
-    public int getRisk34() {
+    public Long getRisk34() {
         return risk34;
     }
 
-    public void setRisk34(int risk34) {
+    public void setRisk34(Long risk34) {
         this.risk34 = risk34;
     }
 
-    public int getRisk35() {
+    public Long getRisk35() {
         return risk35;
     }
 
-    public void setRisk35(int risk35) {
+    public void setRisk35(Long risk35) {
         this.risk35 = risk35;
     }
 
-    public int getRisk36() {
+    public Long getRisk36() {
         return risk36;
     }
 
-    public void setRisk36(int risk36) {
+    public void setRisk36(Long risk36) {
         this.risk36 = risk36;
     }
 }
