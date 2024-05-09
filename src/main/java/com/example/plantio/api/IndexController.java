@@ -12,6 +12,6 @@ public class IndexController {
 
     @GetMapping
     public String get(){
-        return "API ErthTech";
+        return "API ErthTech - API PARA PROJETO DA AGROTINS";
     }
 }
