@@ -75,7 +75,7 @@ https://earthtechapi.up.railway.app/api/
 </details>
 
 <details>
-<summary> Café (Coffe) </summary>
+<summary> Cafe (Coffe) </summary>
 
 ### /api/cafe
 
