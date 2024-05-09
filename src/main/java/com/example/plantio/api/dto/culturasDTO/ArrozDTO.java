@@ -1,4 +1,4 @@
-package com.example.plantio.api.dto;
+package com.example.plantio.api.dto.culturasDTO;
 
 import com.example.plantio.api.model.culturas.Arroz;
 import lombok.Data;

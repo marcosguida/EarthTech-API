@@ -1,8 +1,8 @@
-package com.example.plantio.api.service;
+package com.example.plantio.api.service.culturasService;
 
-import com.example.plantio.api.dto.ArrozDTO;
+import com.example.plantio.api.dto.culturasDTO.ArrozDTO;
 import com.example.plantio.api.model.culturas.Arroz;
-import com.example.plantio.api.repository.ArrozRepository;
+import com.example.plantio.api.repository.culturasRepository.ArrozRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
