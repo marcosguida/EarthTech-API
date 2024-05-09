@@ -24,13 +24,13 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## URI
 
-https://earthtechapi.up.railway.app/api/
+🔗	https://earthtechapi.up.railway.app/api/
 
 ## Documentation 📄
 
 ### Endpoints
 
-📍 General Endpoin: Zoneamento
+📌 General Endpoin: Zoneamento
 
 <details>
   <summary> Zoneamento (Zoning) </summary>
