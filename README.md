@@ -24,8 +24,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## URI
 
-#### URI
-
 https://earthtechapi.up.railway.app/api/
 
 ## Documentation 📄
