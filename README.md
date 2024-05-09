@@ -24,7 +24,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## URI
 
-🔗	https://earthtechapi.up.railway.app/api/
+🔗	https://earthtechapi.up.railway.app
 
 ## Documentation 📄
 
@@ -33,9 +33,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 📌 General Endpoin: Zoneamento
 
 <details>
-  <summary> Zoneamento (Zoning) </summary>
+  <summary> Zoneamento (zoning) </summary>
   
 ### /api/zoneamento
+
+🔗	https://earthtechapi.up.railway.app/api/zoneamento
 
 | Method | Endpoint                  | Description                                                  |
 |--------|---------------------------|--------------------------------------------------------------|
@@ -47,9 +49,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Algodao (Cotton) </summary>
+<summary> Algodao (cotton) </summary>
 
-### /api/algodao
+### /api/algodao 
+
+🔗 https://earthtechapi.up.railway.app/api/algodao
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
@@ -63,7 +67,9 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <details>
 <summary> Arroz (rice) </summary>
 
-### /api/arroz
+### /api/arroz 
+
+🔗 https://earthtechapi.up.railway.app/api/arroz
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
@@ -75,9 +81,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Cafe (Coffe) </summary>
+<summary> Cafe (coffe) </summary>
 
-### /api/cafe
+### /api/cafe 
+
+🔗 https://earthtechapi.up.railway.app/api/cafe
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
@@ -88,9 +96,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Feijao (Bean) </summary>
+<summary> Feijao (bean) </summary>
 
-### /api/feijao
+### /api/feijao 
+
+🔗 https://earthtechapi.up.railway.app/api/feijao
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
@@ -102,9 +112,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Milho (Corn) </summary>
+<summary> Milho (corn) </summary>
 
-### /api/milho
+### /api/milho  
+
+🔗 https://earthtechapi.up.railway.app/api/milho
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
@@ -116,9 +128,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Soja (Soy) </summary>
+<summary> Soja (soy) </summary>
 
-### /api/soja
+### /api/soja  
+
+🔗 https://earthtechapi.up.railway.app/api/soja
 
 | Method | Endpoint                  | 
 |--------|---------------------------|
