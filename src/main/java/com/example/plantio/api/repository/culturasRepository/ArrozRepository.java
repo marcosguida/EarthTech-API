@@ -1,7 +1,6 @@
-package com.example.plantio.api.repository;
+package com.example.plantio.api.repository.culturasRepository;
 
 import com.example.plantio.api.model.culturas.Arroz;
-import com.example.plantio.api.model.culturas.Cafe;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

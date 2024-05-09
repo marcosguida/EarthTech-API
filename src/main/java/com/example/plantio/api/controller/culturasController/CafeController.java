@@ -1,8 +1,8 @@
-package com.example.plantio.api.controller;
+package com.example.plantio.api.controller.culturasController;
 
-import com.example.plantio.api.dto.FeijaoDTO;
-import com.example.plantio.api.model.culturas.Feijao;
-import com.example.plantio.api.service.FeijaoService;
+import com.example.plantio.api.dto.culturasDTO.CafeDTO;
+import com.example.plantio.api.model.culturas.Cafe;
+import com.example.plantio.api.service.culturasService.CafeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
@@ -18,34 +18,34 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("/api/feijao")
+@RequestMapping("/api/cafe")
 @EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
-public class FeijaoController {
+public class CafeController {
     @Autowired
-    private FeijaoService service;
+    private CafeService service;
 
 
     // MÉTODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getFeijao());
+        return ResponseEntity.ok(service.getCafe());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <FeijaoDTO> feijao = service.getFeijaoById(id);
-        return feijao.isPresent() ? ResponseEntity.ok(feijao.get()) : ResponseEntity.notFound().build();
+        Optional <CafeDTO> cafe = service.getCafeById(id);
+        return cafe.isPresent() ? ResponseEntity.ok(cafe.get()) : ResponseEntity.notFound().build();
 
     }
 
 
     // MÉTODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Feijao feijao){
+    public ResponseEntity MÉTODO_post(@RequestBody Cafe cafe){
 
         try{
-            FeijaoDTO zo = service.insert(feijao);
+            CafeDTO zo = service.insert(cafe);
             URI location = getUri(zo.getId());
             return ResponseEntity.created(location).build();
         }
@@ -61,10 +61,10 @@ public class FeijaoController {
 
     // MÉTODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Feijao feijao){
+    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Cafe cafe){
 
-        feijao.setId(id);
-        FeijaoDTO zo = service.update(feijao, id);
+        cafe.setId(id);
+        CafeDTO zo = service.update(cafe, id);
         return zo != null ? ResponseEntity.ok(zo) : ResponseEntity.notFound().build();
     }
 

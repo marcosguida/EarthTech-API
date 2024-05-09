@@ -1,8 +1,8 @@
-package com.example.plantio.api.controller;
+package com.example.plantio.api.controller.culturasController;
 
-import com.example.plantio.api.dto.MilhoDTO;
+import com.example.plantio.api.dto.culturasDTO.MilhoDTO;
 import com.example.plantio.api.model.culturas.Milho;
-import com.example.plantio.api.service.MilhoService;
+import com.example.plantio.api.service.culturasService.MilhoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;

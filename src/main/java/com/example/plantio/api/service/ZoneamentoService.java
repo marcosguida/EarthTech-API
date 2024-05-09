@@ -2,7 +2,6 @@ package com.example.plantio.api.service;
 
 import com.example.plantio.api.dto.ZoneamentoDTO;
 import com.example.plantio.api.model.Zoneamento;
-import com.example.plantio.api.repository.SojaRepository;
 import com.example.plantio.api.repository.ZoneamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

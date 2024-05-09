@@ -1,8 +1,8 @@
-package com.example.plantio.api.controller;
+package com.example.plantio.api.controller.culturasController;
 
-import com.example.plantio.api.dto.SojaDTO;
-import com.example.plantio.api.model.culturas.Soja;
-import com.example.plantio.api.service.SojaService;
+import com.example.plantio.api.dto.culturasDTO.ArrozDTO;
+import com.example.plantio.api.model.culturas.Arroz;
+import com.example.plantio.api.service.culturasService.ArrozService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
@@ -18,34 +18,34 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("/api/soja")
+@RequestMapping("/api/arroz")
 @EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
-public class SojaController {
+public class ArrozController {
     @Autowired
-    private SojaService service;
+    private ArrozService service;
 
 
     // MÉTODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getSoja());
+        return ResponseEntity.ok(service.getArroz());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <SojaDTO> soja = service.getSojaById(id);
-        return soja.isPresent() ? ResponseEntity.ok(soja.get()) : ResponseEntity.notFound().build();
+        Optional <ArrozDTO> arroz = service.getArrozById(id);
+        return arroz.isPresent() ? ResponseEntity.ok(arroz.get()) : ResponseEntity.notFound().build();
 
     }
 
 
     // MÉTODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Soja soja){
+    public ResponseEntity MÉTODO_post(@RequestBody Arroz arroz){
 
         try{
-            SojaDTO zo = service.insert(soja);
+            ArrozDTO zo = service.insert(arroz);
             URI location = getUri(zo.getId());
             return ResponseEntity.created(location).build();
         }
@@ -61,10 +61,10 @@ public class SojaController {
 
     // MÉTODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Soja soja){
+    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Arroz arroz){
 
-        soja.setId(id);
-        SojaDTO zo = service.update(soja, id);
+        arroz.setId(id);
+        ArrozDTO zo = service.update(arroz, id);
         return zo != null ? ResponseEntity.ok(zo) : ResponseEntity.notFound().build();
     }
 
