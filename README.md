@@ -33,7 +33,7 @@ https://earthtechapi.up.railway.app/api/
 📍 General Endpoin: Zoneamento
 
 <details>
-  <summary> Zoneamento </summary>
+  <summary> Zoneamento (Zoning) </summary>
   
 ### /api/zoneamento
 
