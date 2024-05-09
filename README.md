@@ -22,7 +22,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 - Presents data from the Risk Table for the main agricultural crops in the state of Tocantins, Brazil.
 - CRUD operations for specific crop endpoints.
 
-## Usages and URI
+## URI
 
 #### URI
 
