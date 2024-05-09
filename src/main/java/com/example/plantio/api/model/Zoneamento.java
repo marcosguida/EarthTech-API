@@ -1,9 +1,6 @@
 package com.example.plantio.api.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.NonNull;
 
 /**
@@ -11,6 +8,7 @@ import lombok.NonNull;
  */
 
 @Entity
+@DiscriminatorColumn(name = "dtype", discriminatorType = DiscriminatorType.STRING)
 public class Zoneamento {
 
     @Id
