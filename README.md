@@ -1,5 +1,4 @@
-# EarthTech-API
-![License: MIT](https://img.shields.io/github/license/mainvest/vue-simple-icons)
+## EarthTechAPI 
 
 EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for agricultural crops. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information relating to agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
 
@@ -21,13 +20,13 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 - Display updated data on agricultural zoning in the state of Tocantins, Brazil.
 - Presents data from the Risk Table for the main agricultural crops in the state of Tocantins, Brazil.
-- CRUD for endpoints.
+- CRUD operations for specific crop endpoints.
 
 ## Usages and URI
 
 #### URI
 
-https://earthtechapi.up.railway.app/api/zoneamento
+https://earthtechapi.up.railway.app/api/
 
 #### Postman
 Run the API in Postman: 
@@ -37,18 +36,109 @@ Run the API in Postman:
 ## Documentation 📄
 
 ### Endpoints
+
+📍 General Endpoin: Zoneamento
+
+<details>
+  <summary> Zoneamento </summary>
   
+### /api/zoneamento
+
 | Method | Endpoint                  | Description                                                  |
 |--------|---------------------------|--------------------------------------------------------------|
 | ``GET``    | /api/zoneamento           | Returns the details of the zoning resource.                 |
 | ``POST``   | /api/zoneamento/{id}     | Create a new zoning resource on the server.                 |
 | ``DELETE`` | /api/zoneamento/{id}     | Remove the zoning resource identified by {id}.              |
 | ``PUT``    | /api/zoneamento/{id}     | Updates or replaces the zoning resource identified by {id}.  |
-| Example    | /safra/{safra}           | Can search by identifying the specific field. Example: GET /safra/{safra}. |
 
-    
+</details>
+
+<details>
+<summary> Algodao (Cotton) </summary>
+
+### /api/algodao
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/algodao          | 
+| ``POST``   | /api/algodao/{id}     | 
+| ``DELETE`` | /api/algodao/{id}     | 
+| ``PUT``    | /api/algodao/{id}     | 
+
+</details>
+
+<details>
+<summary> Arroz (rice) </summary>
+
+### /api/arroz
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/arroz          | 
+| ``POST``   | /api/arroz/{id}     | 
+| ``DELETE`` | /api/arroz/{id}     | 
+| ``PUT``    | /api/arroz/{id}     | 
+
+</details>
+
+<details>
+<summary> Café (Coffe) </summary>
+
+### /api/cafe
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/cafe          | 
+| ``POST``   | /api/cafe/{id}     | 
+| ``DELETE`` | /api/cafe/{id}     | 
+| ``PUT``    | /api/cafe/{id}     | 
+</details>
+
+<details>
+<summary> Feijao (Bean) </summary>
+
+### /api/feijao
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/feijao          | 
+| ``POST``   | /api/feijao/{id}     | 
+| ``DELETE`` | /api/feijao/{id}     | 
+| ``PUT``    | /api/feijao/{id}     | 
+
+</details>
+
+<details>
+<summary> Milho (Corn) </summary>
+
+### /api/milho
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/milho          | 
+| ``POST``   | /api/milho/{id}     | 
+| ``DELETE`` | /api/milho/{id}     | 
+| ``PUT``    | /api/milho/{id}     | 
+
+</details>
+
+<details>
+<summary> Soja (Soy) </summary>
+
+### /api/soja
+
+| Method | Endpoint                  | 
+|--------|---------------------------|
+| ``GET``    | /api/soja          | 
+| ``POST``   | /api/soja/{id}     | 
+| ``DELETE`` | /api/soja/{id}     | 
+| ``PUT``    | /api/soja/{id}     | 
+
+</details>
+
+
 ## Response
-After a successful request, the API returns the following fields in JSON format:
+After a successful request, the API returns the following fields in JSON format for each endpoint:
 
 ```js
 {
@@ -110,7 +200,4 @@ Any contribution or suggestion send me a message
 - Email: ribeiroguidam@gmail.com
   
     [![linkedln](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcos-ribeiro-guida?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcosguidda?igsh=MWhvaDViZ3Jid2IyNw%3D%3D&utm_source=qr)
-
-
-
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcosguidda?igsh=MWhvaDViZ3Jid2IyNw%3D%3D&utm_source=qr)     
