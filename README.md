@@ -1,4 +1,5 @@
 ## EarthTechAPI 
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for agricultural crops. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information relating to agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
 
@@ -7,7 +8,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Technology | Documentation / Download |
 |------------|------------------------------|
 | Java 17 | [Documentation](https://docs.oracle.com/en/java/javase/17/) |
-| Spring Boot 3.2| [Documentation](https://docs.spring.io/spring-boot/installing.html) |
+| Spring Boot 3.2 | [Documentation](https://docs.spring.io/spring-boot/installing.html) |
 | Maven | [Download](https://maven.apache.org/download.cgi) |
 | MySQL | [Download](https://dev.mysql.com/downloads/installer/) |
 | Hibernate | [Documentation](https://hibernate.org/orm/documentation/getting-started/) |
