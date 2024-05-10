@@ -2,7 +2,7 @@
 
 [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for agricultural crops. This API allows users to consult updated data from the Brazilian federal government's ZARC system to display mapping information relating to agricultural zoning in the Tocantins region. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
+EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for agricultural crops. This API allows users to consult updated data from the Brazilian federal government's ZARC system and the PronaSolos System (EMBRAPA) to display mapping information related to agricultural zoning in the Tocantins region and physical and chemical attributes of soil classes and soil drainage classes. The main objective is to promote innovation for the progress of agriculture in the state of Tocantins, offering a simple, accessible and objective approach.
 
 ## ⚒️ Technologies
 
@@ -23,6 +23,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 - Display updated data on agricultural zoning in the state of Tocantins, Brazil.
 - Presents data from the Risk Table for the main agricultural crops in the state of Tocantins, Brazil.
+- Display of chemical and physical attribute resources for soil and drainage classes categorized by the Brazilian System of Sistema Brasileiro de Classificação de Solos (Classification under the responsibility of EMBRAPA)
 - CRUD operations for specific crop endpoints.
 
 ## URI
@@ -33,24 +34,15 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 <h3>📍 API Endpoints</h3>
 
-🔺 General Endpoin: Zoneamento
-
-<details>
-  <summary> Zoneamento (zoning) </summary>
-  
-### /api/zoneamento
-
-🔗	https://earthtechapi.up.railway.app/api/zoneamento
-
 | Method | Endpoint                  | Description                                                  |
 |--------|---------------------------|--------------------------------------------------------------|
-| ``GET``    | /api/zoneamento           | Returns the details of the zoning resource.                 |
-| ``POST``   | /api/zoneamento/{id}     | Create a new zoning resource on the server.                 |
-| ``DELETE`` | /api/zoneamento/{id}     | Remove the zoning resource identified by {id}.              |
-| ``PUT``    | /api/zoneamento/{id}     | Updates or replaces the zoning resource identified by {id}.  |
+| ``GET``    | /api/{cultura ou classe}/{id}     | Returns the details of the crop resource or average physical-chemical attributes by soil class.                 |
+| ``POST``   | /api/{cultura ou classe}/{id}     | Creates a new zoning resource and average physicochemical attributes on the server.                 |
+| ``DELETE`` | /api/{cultura ou classe}/{id}     | Remove the zoning and average physicochemical attributes resource identified by {id}.              |
+| ``PUT``    | /api/{cultura ou classe}/{id}     | Updates or replaces the zoning and average physicochemical attributes resource identified by {id}.  |
 
 </details>
-<hr> </hr>
+
 <h4> 🌱 Culturas </h4>
 
 
@@ -151,8 +143,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <hr> </hr>
 <h4> 🔺 POST, PUT and DELETE </h4>
 
-- Zoneamento: ``/api/zoneamento/{id}``
-- Culturas: ``/api/{cultura}/{id}``
+- Endpoint: ``/api/{cultura}/{id}``
 
 **REQUEST**
 
