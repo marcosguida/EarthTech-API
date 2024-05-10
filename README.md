@@ -148,7 +148,10 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 </details>
 <hr> </hr>
-<h4> 🔺 POST and PUT /api/{cultura}/{id}</h4>
+<h4> 🔺 POST, PUT and DELETE </h4>
+
+- Zoneamento: ``/api/zoneamento/{id}``
+- Culturas: ``/api/{cultura}/{id}``
 
 **REQUEST**
 
