@@ -18,7 +18,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Postman | [Download](https://www.postman.com/downloads/) |
 
 
-
 ## Features
 
 - Display updated data on agricultural zoning in the state of Tocantins, Brazil.
@@ -35,11 +34,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <h3>📍 API Endpoints</h3>
 
 | Method | Endpoint                  | Description                                                  |
-|--------|---------------------------|--------------------------------------------------------------|
-| ``GET``    | /api/{cultura ou classe}/{id}     | Returns the details of the crop resource or average physical-chemical attributes by soil class.                 |
-| ``POST``   | /api/{cultura ou classe}/{id}     | Creates a new zoning resource and average physicochemical attributes on the server.                 |
-| ``DELETE`` | /api/{cultura ou classe}/{id}     | Remove the zoning and average physicochemical attributes resource identified by {id}.              |
-| ``PUT``    | /api/{cultura ou classe}/{id}     | Updates or replaces the zoning and average physicochemical attributes resource identified by {id}.  |
+|--------|-------------------------------------|--------------------------------------------------------------|
+| ``GET``    | /api/{cultura ou classe}/{id}  | Returns the details of the crop resource or average physical-chemical attributes by soil class.                 |
+| ``POST``   | /api/{cultura ou classe}/{id}  | Creates a new zoning resource and average physicochemical attributes on the server.                 |
+| ``DELETE`` | /api/{cultura ou classe}/{id}  | Remove the zoning and average physicochemical attributes resource identified by {id}.              |
+| ``PUT``    | /api/{cultura ou classe}/{id}  | Updates or replaces the zoning and average physicochemical attributes resource identified by {id}.  |
 
 </details>
 
