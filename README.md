@@ -81,7 +81,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 </details>
 
 <details>
-<summary> Cafe (coffe) </summary>
+<summary> Cafe (coffee) </summary>
 
 ### /api/cafe 
 
