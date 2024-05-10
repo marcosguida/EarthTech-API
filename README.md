@@ -14,8 +14,9 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | MySQL | [Download](https://dev.mysql.com/downloads/installer/) |
 | Hibernate | [Documentation](https://hibernate.org/orm/documentation/getting-started/) |
 | Lombok | [Setup](https://projectlombok.org/setup/) |
-| Postman | [Download](https://www.postman.com/downloads/) |
 | JUnit 5 | [Documentation](https://junit.org/junit5/) |
+| Postman | [Download](https://www.postman.com/downloads/) |
+
 
 
 ## Features
