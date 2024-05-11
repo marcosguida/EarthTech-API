@@ -25,7 +25,7 @@ public class ZoneamentoController {
     private ZoneamentoService service;
 
 
-    // MÉTODO - GET
+    // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
         return ResponseEntity.ok(service.getZoneamento());
@@ -292,9 +292,9 @@ public class ZoneamentoController {
     }
 
 
-    // MÉTODO - POST
+    // METODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Zoneamento zoneamento){
+    public ResponseEntity METODO_post(@RequestBody Zoneamento zoneamento){
 
         try{
             ZoneamentoDTO zo = service.insert(zoneamento);
@@ -311,9 +311,9 @@ public class ZoneamentoController {
     }
 
 
-    // MÉTODO - PUT
+    // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Zoneamento zoneamento){
+    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Zoneamento zoneamento){
 
         zoneamento.setId(id);
         ZoneamentoDTO zo = service.update(zoneamento, id);
@@ -321,9 +321,9 @@ public class ZoneamentoController {
     }
 
 
-    // MÉTODO - DELETE
+    // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
+    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
 
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();

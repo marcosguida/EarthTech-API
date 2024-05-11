@@ -25,7 +25,7 @@ public class MediasController {
     private MediasService service;
 
 
-    // MÉTODO - GET
+    // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
         return ResponseEntity.ok(service.getMedias());
@@ -63,9 +63,9 @@ public class MediasController {
         return medias.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(medias);
     }
     
-    // MÉTODO - POST
+    // METODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Medias medias){
+    public ResponseEntity METODO_post(@RequestBody Medias medias){
 
         try{
             MediasDTO zo = service.insert(medias);
@@ -82,9 +82,9 @@ public class MediasController {
     }
 
 
-    // MÉTODO - PUT
+    // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Medias medias){
+    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Medias medias){
 
         medias.setId(id);
         MediasDTO zo = service.update(medias, id);
@@ -92,9 +92,9 @@ public class MediasController {
     }
 
 
-    // MÉTODO - DELETE
+    // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
+    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
 
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();

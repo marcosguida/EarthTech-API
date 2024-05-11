@@ -25,7 +25,7 @@ public class SolosController {
     private SolosService service;
 
 
-    // MÉTODO - GET
+    // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
         return ResponseEntity.ok(service.getSolos());
@@ -75,9 +75,9 @@ public class SolosController {
         return medias.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(medias);
     }
 
-    // MÉTODO - POST
+    // METODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Solos solos){
+    public ResponseEntity METODO_post(@RequestBody Solos solos){
 
         try{
             SolosDTO zo = service.insert(solos);
@@ -94,9 +94,9 @@ public class SolosController {
     }
 
 
-    // MÉTODO - PUT
+    // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Solos solos){
+    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Solos solos){
 
         solos.setId(id);
         SolosDTO zo = service.update(solos, id);
@@ -104,9 +104,9 @@ public class SolosController {
     }
 
 
-    // MÉTODO - DELETE
+    // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
+    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
 
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();

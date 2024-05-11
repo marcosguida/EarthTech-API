@@ -24,7 +24,7 @@ public class DrenagemController {
     private DrenagemService service;
 
 
-    // MÉTODO - GET
+    // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
         return ResponseEntity.ok(service.getDrenagem());
@@ -39,9 +39,9 @@ public class DrenagemController {
     }
 
 
-    // MÉTODO - POST
+    // METODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Drenagem drenagem){
+    public ResponseEntity METODO_post(@RequestBody Drenagem drenagem){
 
         try{
             DrenagemDTO zo = service.insert(drenagem);
@@ -58,9 +58,9 @@ public class DrenagemController {
     }
 
 
-    // MÉTODO - PUT
+    // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Drenagem drenagem){
+    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Drenagem drenagem){
 
         drenagem.setId(id);
         DrenagemDTO zo = service.update(drenagem, id);
@@ -68,9 +68,9 @@ public class DrenagemController {
     }
 
 
-    // MÉTODO - DELETE
+    // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
+    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
 
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();

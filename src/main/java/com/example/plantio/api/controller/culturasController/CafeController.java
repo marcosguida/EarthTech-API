@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 import java.net.URI;
 import java.util.Optional;
 
@@ -25,7 +24,7 @@ public class CafeController {
     private CafeService service;
 
 
-    // MÉTODO - GET
+    // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
         return ResponseEntity.ok(service.getCafe());
@@ -40,9 +39,9 @@ public class CafeController {
     }
 
 
-    // MÉTODO - POST
+    // METODO - POST
     @PostMapping
-    public ResponseEntity MÉTODO_post(@RequestBody Cafe cafe){
+    public ResponseEntity METODO_post(@RequestBody Cafe cafe){
 
         try{
             CafeDTO zo = service.insert(cafe);
@@ -59,9 +58,9 @@ public class CafeController {
     }
 
 
-    // MÉTODO - PUT
+    // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity MÉTODO_put(@PathVariable("id") Long id, @RequestBody Cafe cafe){
+    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Cafe cafe){
 
         cafe.setId(id);
         CafeDTO zo = service.update(cafe, id);
@@ -69,9 +68,9 @@ public class CafeController {
     }
 
 
-    // MÉTODO - DELETE
+    // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity MÉTODO_delete(@PathVariable("id") Long id){
+    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
 
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();
