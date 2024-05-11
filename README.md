@@ -20,9 +20,9 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## Features
 
-- Display updated data on agricultural zoning in the state of Tocantins, Brazil.
-- Presents data from the Risk Table for the main agricultural crops in the state of Tocantins, Brazil.
-- Display of chemical and physical attribute resources for soil and drainage classes categorized by the Brazilian System of Sistema Brasileiro de Classificação de Solos (Classification under the responsibility of EMBRAPA)
+- Display updated data on agricultural zoning in the state of Tocantins, Brazil;
+- Presents data from the Risk Table for the main agricultural crops in the state of Tocantins, Brazil;
+- Display of chemical and physical attribute resources for soil and drainage classes categorized by the Brazilian System of Sistema Brasileiro de Classificação de Solos (Classification under the responsibility of EMBRAPA);
 - CRUD operations for specific crop endpoints.
 
 ## URI
