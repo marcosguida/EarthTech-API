@@ -12,6 +12,6 @@ public class IndexController {
 
     @GetMapping
     public String get(){
-        return "API ErthTech - Agricultural zoning API with data from the state of Tocantins, Brazil. Developed by Marcos Ribeiro, for the Unitins Innovation project. ";
+        return "API ErthTech - Agricultural zoning API with data from the state of Tocantins, Brazil. Developed by Marcos Ribeiro ";
     }
 }
