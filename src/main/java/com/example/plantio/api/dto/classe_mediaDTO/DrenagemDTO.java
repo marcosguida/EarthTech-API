@@ -7,9 +7,7 @@ import lombok.Data;
 public class DrenagemDTO {
     private Long id;
     private String classe;
-    private Double areia;
-    private Double argila;
-    private Double silte;
+    private Double areia, argila, silte;
 
     public DrenagemDTO(Drenagem drenagem) {
 
