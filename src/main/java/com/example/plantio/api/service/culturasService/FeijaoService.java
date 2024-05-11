@@ -6,7 +6,6 @@ import com.example.plantio.api.repository.culturasRepository.FeijaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
