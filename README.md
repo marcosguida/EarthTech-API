@@ -56,6 +56,18 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | ``DELETE`` | /api/medias/drenagem/{id}     | 
 | ``PUT``    | /api/medias/drenagem/{id}     | 
 
+**REQUEST**
+
+``` js
+{
+    "id": Long,
+    "classe": String,
+    "areia": Double,
+    "argila": Double,
+    "silte": Double
+}
+
+```
 </details>
 
 <details>
@@ -72,7 +84,26 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | ``DELETE`` | /api/medias/solos/{id}     | 
 | ``PUT``    | /api/medias/solos/{id}     | 
 
+**REQUEST**
+
+``` js
+{
+    "id": Long,
+    "classe": String,
+    "areia": Double,
+    "argila": Double,
+    "silte": Double,
+    "phAgua": Double,
+    "fosforo": Double,
+    "fosforoAssimilavel": Double,
+    "carbono": Double,
+    "nitrogenio": Double,
+    "aluminioTrocavel": Double
+}
+
+```
 </details>
+
 
 </details>
 
@@ -172,12 +203,11 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | ``PUT``    | /api/soja/{id}     | 
 
 </details>
-<hr> </hr>
 <h4> 🔺 POST, PUT and DELETE </h4>
 
-- Endpoint: ``/api/{cultura ou classe}/{id}``
+- Endpoint: ``/api/{cultura}/{id}``
 
-**REQUEST**
+**REQUEST FOR CROPS**
 
 ``` js
 {
