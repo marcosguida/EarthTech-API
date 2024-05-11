@@ -3,6 +3,10 @@ package com.example.plantio.api.dto;
 import com.example.plantio.api.model.Zoneamento;
 import lombok.Data;
 
+/**
+ * @author marcos
+ */
+
 @Data
 public class ZoneamentoDTO {
     private Long id;

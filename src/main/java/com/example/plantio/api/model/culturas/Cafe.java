@@ -4,6 +4,10 @@ import com.example.plantio.api.model.Zoneamento;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 
+/**
+ * @author marcos
+ */
+
 @Entity
 @DiscriminatorValue("cafe")
 public class Cafe extends Zoneamento {

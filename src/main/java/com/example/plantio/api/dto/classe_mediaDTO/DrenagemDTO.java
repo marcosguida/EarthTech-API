@@ -3,6 +3,10 @@ package com.example.plantio.api.dto.classe_mediaDTO;
 import com.example.plantio.api.model.classe_media.Drenagem;
 import lombok.Data;
 
+/**
+ * @author marcos
+ */
+
 @Data
 public class DrenagemDTO {
     private Long id;
