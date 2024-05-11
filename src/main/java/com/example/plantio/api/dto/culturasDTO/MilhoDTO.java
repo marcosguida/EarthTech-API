@@ -3,6 +3,10 @@ package com.example.plantio.api.dto.culturasDTO;
 import com.example.plantio.api.model.culturas.Milho;
 import lombok.Data;
 
+/**
+ * @author marcos
+ */
+
 @Data
 public class MilhoDTO {
     private Long id;
