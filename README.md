@@ -60,7 +60,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ``` js
 {
-    "id": Long,
     "classe": String,
     "areia": Double,
     "argila": Double,
@@ -88,7 +87,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ``` js
 {
-    "id": Long,
     "classe": String,
     "areia": Double,
     "argila": Double,
