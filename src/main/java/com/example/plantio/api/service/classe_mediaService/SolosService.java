@@ -34,6 +34,8 @@ public class SolosService {
 
     public List<SolosDTO> getSolosByNitrogenio(Double nitrogenio) { return rep.findByNitrogenio(nitrogenio).stream().map(SolosDTO::create).collect(Collectors.toList()); }
 
+    public List<SolosDTO> getSolosByAluminioTrocavel(Double aluminioTrocavel) { return rep.findByAluminioTrocavel(aluminioTrocavel).stream().map(SolosDTO::create).collect(Collectors.toList()); }
+
 
     public SolosDTO insert(Solos solos) { Assert.isNull(solos.getId(),"Não foi possível inserir o registro de solos!");
         return SolosDTO.create(rep.save(solos));

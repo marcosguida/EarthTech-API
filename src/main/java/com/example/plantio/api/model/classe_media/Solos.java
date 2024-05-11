@@ -12,7 +12,15 @@ import jakarta.persistence.Entity;
 @DiscriminatorValue("solos")
 public class Solos extends Medias {
 
-    private Double phAgua, fosforo, fosforoAssimilavel, carbono, nitrogenio;
+    private Double phAgua, fosforo, fosforoAssimilavel, carbono, nitrogenio, aluminioTrocavel;
+
+    public Double getAluminioTrocavel() {
+        return aluminioTrocavel;
+    }
+
+    public void setAluminioTrocavel(Double aluminioTrocavel) {
+        this.aluminioTrocavel = aluminioTrocavel;
+    }
 
     public Double getPhAgua() {
         return phAgua;
