@@ -19,4 +19,6 @@ public interface SolosRepository extends JpaRepository<Solos, Long> {
 
     List<Solos> findByNitrogenio(Double nitrogenio);
 
+    List<Solos> findByAluminioTrocavel(Double aluminioTrocavel);
+
 }
