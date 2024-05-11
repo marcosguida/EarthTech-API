@@ -3,6 +3,10 @@ package com.example.plantio.api.dto.classe_mediaDTO;
 import com.example.plantio.api.model.classe_media.Solos;
 import lombok.Data;
 
+/**
+ * @author Marcos Ribeiro
+ */
+
 @Data
 public class SolosDTO {
     private Long id;
