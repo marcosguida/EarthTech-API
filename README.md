@@ -40,10 +40,43 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | ``DELETE`` | /api/{cultura ou classe}/{id}  | Remove the zoning and average physicochemical attributes resource identified by {id}.              |
 | ``PUT``    | /api/{cultura ou classe}/{id}  | Updates or replaces the zoning and average physicochemical attributes resource identified by {id}.  |
 
+<h4> 🌱 Classes of physical-chemical attributes </h4>
+
+<details>
+<summary> Drenagem (drainage) </summary>
+
+### /api/medias/drenagem
+
+🔗 https://earthtechapi.up.railway.app/api/medias/drenagem
+
+| Method | Route                  | 
+|--------|---------------------------|
+| ``GET``    | /api/medias/drenagem         | 
+| ``POST``   | /api/medias/drenagem/{id}     | 
+| ``DELETE`` | /api/medias/drenagem/{id}     | 
+| ``PUT``    | /api/medias/drenagem/{id}     | 
+
 </details>
 
-<h4> 🌱 Culturas </h4>
+<details>
+<summary> Solos (soils) </summary>
 
+### /api/medias/solos
+
+🔗 https://earthtechapi.up.railway.app/api/medias/solos
+
+| Method | Route                  | 
+|--------|---------------------------|
+| ``GET``    | /api/medias/solos          | 
+| ``POST``   | /api/medias/solos/{id}     | 
+| ``DELETE`` | /api/medias/solos/{id}     | 
+| ``PUT``    | /api/medias/solos/{id}     | 
+
+</details>
+
+</details>
+
+<h4> 🌱 Culturas (crops) </h4>
 
 <details>
 <summary> Algodao (cotton) </summary>
@@ -52,7 +85,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/algodao
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/algodao          | 
 | ``POST``   | /api/algodao/{id}     | 
@@ -68,7 +101,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/arroz
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/arroz          | 
 | ``POST``   | /api/arroz/{id}     | 
@@ -84,7 +117,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/cafe
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/cafe          | 
 | ``POST``   | /api/cafe/{id}     | 
@@ -99,7 +132,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/feijao
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/feijao          | 
 | ``POST``   | /api/feijao/{id}     | 
@@ -115,7 +148,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/milho
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/milho          | 
 | ``POST``   | /api/milho/{id}     | 
@@ -131,7 +164,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 🔗 https://earthtechapi.up.railway.app/api/soja
 
-| Method | Endpoint                  | 
+| Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/soja          | 
 | ``POST``   | /api/soja/{id}     | 
