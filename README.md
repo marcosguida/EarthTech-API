@@ -258,59 +258,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ```
 
-## Response
-After a successful request, the API returns the following fields in JSON format for each endpoint:
-
-```js
-{
-  "id": Long,
-  "safra": String,
-  "cultura": String,
-  "uf": String,
-  "municipio": String,
-  "grupo": String,
-  "solo": String,
-  "risk1": Long,
-  "risk2": Long,
-  "risk3": Long,
-  "risk4": Long,
-  "risk5": Long,
-  "risk6": Long,
-  "risk7": Long,
-  "risk8": Long,
-  "risk9": Long,
-  "risk10": Long,
-  "risk11": Long,
-  "risk12": Long,
-  "risk13": Long,
-  "risk14": Long,
-  "risk15": Long,
-  "risk16": Long,
-  "risk17": Long,
-  "risk18": Long,
-  "risk19": Long,
-  "risk20": Long,
-  "risk21": Long,
-  "risk22": Long,
-  "risk23": Long,
-  "risk24": Long,
-  "risk25": Long,
-  "risk26": Long,
-  "risk27": Long,
-  "risk28": Long,
-  "risk29": Long,
-  "risk30": Long,
-  "risk31": Long,
-  "risk32": Long,
-  "risk33": Long,
-  "risk34": Long,
-  "risk35": Long,
-  "risk36": Long
-
-}
-
-```
-
 ## License
 
 API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
