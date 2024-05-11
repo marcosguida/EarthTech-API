@@ -7,7 +7,7 @@ import lombok.Data;
 public class SolosDTO {
     private Long id;
     private String classe;
-    private Double areia, argila, silte, phAgua, fosforo, fosforoAssimilavel, carbono, nitrogenio;
+    private Double areia, argila, silte, phAgua, fosforo, fosforoAssimilavel, carbono, nitrogenio, aluminioTrocavel;
 
     public SolosDTO(Solos solos) {
 
@@ -21,6 +21,7 @@ public class SolosDTO {
         this.fosforoAssimilavel = solos.getFosforoAssimilavel();
         this.carbono = solos.getCarbono();
         this.nitrogenio = solos.getNitrogenio();
+        this.aluminioTrocavel = solos.getAluminioTrocavel();
     }
 
     public static SolosDTO create(Solos solos) { return new SolosDTO(solos); }

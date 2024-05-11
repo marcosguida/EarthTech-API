@@ -69,6 +69,12 @@ public class SolosController {
         return medias.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(medias);
     }
 
+    @GetMapping("/aluminio/{aluminio}")
+    public ResponseEntity getSolosByAluminioTrocavel(@PathVariable("aluminioTrocavel") Double aluminioTrocavel){
+        List<SolosDTO> medias = service.getSolosByAluminioTrocavel(aluminioTrocavel);
+        return medias.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(medias);
+    }
+
     // MÉTODO - POST
     @PostMapping
     public ResponseEntity MÉTODO_post(@RequestBody Solos solos){
