@@ -9,7 +9,7 @@ import jakarta.persistence.Entity;
  */
 
 @Entity
-@DiscriminatorValue("Feijão 1ª Safra")
+@DiscriminatorValue("feijao")
 public class Feijao extends Zoneamento {
 
     public Feijao(Long id, String safra, String cultura, String uf, String municipio, String grupo, String solo,
