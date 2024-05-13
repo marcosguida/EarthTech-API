@@ -20,6 +20,7 @@ import java.util.Optional;
 @RequestMapping("/api/feijao")
 @EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 public class FeijaoController {
+
     @Autowired
     private FeijaoService service;
 
