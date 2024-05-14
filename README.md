@@ -35,8 +35,8 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 | Method | Endpoint                  | Description                                                  |
 |--------|-------------------------------------|--------------------------------------------------------------|
-| ``GET``    | /api/{cultura ou classe}/{id}  | Returns the details of the crop resource or average physical-chemical attributes by soil class.                 |
-| ``POST``   | /api/{cultura ou classe}/{id}  | Creates a new zoning resource and average physicochemical attributes on the server.                 |
+| ``GET``    | /api/{cultura ou classe}  | Returns the details of the crop resource or average physical-chemical attributes by soil class.                 |
+| ``POST``   | /api/{cultura ou classe}/  | Creates a new zoning resource and average physicochemical attributes on the server.                 |
 | ``DELETE`` | /api/{cultura ou classe}/{id}  | Remove the zoning and average physicochemical attributes resource identified by {id}.              |
 | ``PUT``    | /api/{cultura ou classe}/{id}  | Updates or replaces the zoning and average physicochemical attributes resource identified by {id}.  |
 
@@ -52,7 +52,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/medias/drenagem         | 
-| ``POST``   | /api/medias/drenagem/{id}     | 
+| ``POST``   | /api/medias/drenagem/    | 
 | ``DELETE`` | /api/medias/drenagem/{id}     | 
 | ``PUT``    | /api/medias/drenagem/{id}     | 
 
@@ -79,7 +79,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/medias/solos          | 
-| ``POST``   | /api/medias/solos/{id}     | 
+| ``POST``   | /api/medias/solos/     | 
 | ``DELETE`` | /api/medias/solos/{id}     | 
 | ``PUT``    | /api/medias/solos/{id}     | 
 
@@ -117,7 +117,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/algodao          | 
-| ``POST``   | /api/algodao/{id}     | 
+| ``POST``   | /api/algodao/     | 
 | ``DELETE`` | /api/algodao/{id}     | 
 | ``PUT``    | /api/algodao/{id}     | 
 
@@ -133,7 +133,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/arroz          | 
-| ``POST``   | /api/arroz/{id}     | 
+| ``POST``   | /api/arroz/     | 
 | ``DELETE`` | /api/arroz/{id}     | 
 | ``PUT``    | /api/arroz/{id}     | 
 
@@ -149,7 +149,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/cafe          | 
-| ``POST``   | /api/cafe/{id}     | 
+| ``POST``   | /api/cafe/     | 
 | ``DELETE`` | /api/cafe/{id}     | 
 | ``PUT``    | /api/cafe/{id}     | 
 </details>
@@ -164,7 +164,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/feijao          | 
-| ``POST``   | /api/feijao/{id}     | 
+| ``POST``   | /api/feijao/     | 
 | ``DELETE`` | /api/feijao/{id}     | 
 | ``PUT``    | /api/feijao/{id}     | 
 
@@ -180,7 +180,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/milho          | 
-| ``POST``   | /api/milho/{id}     | 
+| ``POST``   | /api/milho/     | 
 | ``DELETE`` | /api/milho/{id}     | 
 | ``PUT``    | /api/milho/{id}     | 
 
@@ -196,7 +196,7 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/soja          | 
-| ``POST``   | /api/soja/{id}     | 
+| ``POST``   | /api/soja/     | 
 | ``DELETE`` | /api/soja/{id}     | 
 | ``PUT``    | /api/soja/{id}     | 
 
