@@ -27,8 +27,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ## URI
 
-🔗	https://earthtechapi.up.railway.app
-
 ## Documentation 📄
 
 <h3>📍 API Endpoints</h3>
@@ -46,8 +44,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <summary> Drenagem (drainage) </summary>
 
 ### /api/medias/drenagem
-
-🔗 https://earthtechapi.up.railway.app/api/medias/drenagem
 
 | Method | Route                  | 
 |--------|---------------------------|
@@ -73,8 +69,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <summary> Solos (soils) </summary>
 
 ### /api/medias/solos
-
-🔗 https://earthtechapi.up.railway.app/api/medias/solos
 
 | Method | Route                  | 
 |--------|---------------------------|
@@ -112,8 +106,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ### /api/algodao 
 
-🔗 https://earthtechapi.up.railway.app/api/algodao
-
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/algodao          | 
@@ -127,8 +119,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <summary> Arroz (rice) </summary>
 
 ### /api/arroz 
-
-🔗 https://earthtechapi.up.railway.app/api/arroz
 
 | Method | Route                  | 
 |--------|---------------------------|
@@ -144,8 +134,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ### /api/cafe 
 
-🔗 https://earthtechapi.up.railway.app/api/cafe
-
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/cafe          | 
@@ -158,8 +146,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <summary> Feijao (bean) </summary>
 
 ### /api/feijao 
-
-🔗 https://earthtechapi.up.railway.app/api/feijao
 
 | Method | Route                  | 
 |--------|---------------------------|
@@ -175,8 +161,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 
 ### /api/milho  
 
-🔗 https://earthtechapi.up.railway.app/api/milho
-
 | Method | Route                  | 
 |--------|---------------------------|
 | ``GET``    | /api/milho          | 
@@ -190,8 +174,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 <summary> Soja (soy) </summary>
 
 ### /api/soja  
-
-🔗 https://earthtechapi.up.railway.app/api/soja
 
 | Method | Route                  | 
 |--------|---------------------------|
