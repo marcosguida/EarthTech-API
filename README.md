@@ -25,8 +25,6 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 - Display of chemical and physical attribute resources for soil and drainage classes categorized by the Brazilian System of Sistema Brasileiro de Classificação de Solos (Classification under the responsibility of EMBRAPA);
 - CRUD operations for specific crop endpoints.
 
-## URI
-
 ## Documentation 📄
 
 <h3>📍 API Endpoints</h3>
@@ -237,6 +235,44 @@ EarthTechAPI aims to integrate agricultural zoning data with Smart Platforms for
 }
 
 ```
+
+## Configuration
+
+#### Define the following details in your environment:
+
+- Database in 'application.properties'
+- Set Java 17 as the project's JDK
+- Maven as a system environment variable
+- Set GIT as an environment variable as well
+
+#### 1. Select one of your folders
+```
+cd path/folder
+```
+
+#### 2. clone the repository
+``` 
+git clone https://github.com/marcosguida/EarthTech-API.git
+```
+
+#### 3. Select the project in the folder
+```
+cd EarthTech-API
+``` 
+#### 4. install all Maven dependencies 
+```
+mvn install
+``` 
+
+#### 5. test the application
+```
+mvn test
+``` 
+#### 6. Run the spring boot application
+```
+mvn spring-boot:run
+``` 
+`` press "CTRL + C" to stop ``
 
 ## License
 
