@@ -274,6 +274,8 @@ mvn spring-boot:run
 ``` 
 `` press "CTRL + C" to stop ``
 
+API available at: http://localhost:8080/
+
 ## License
 
 API license under https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
