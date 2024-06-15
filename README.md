@@ -258,17 +258,35 @@ git clone https://github.com/marcosguida/EarthTech-API.git
 #### 3. Select the project in the folder
 ```
 cd EarthTech-API
-``` 
-#### 4. install all Maven dependencies 
+```
+
+#### 4. Change database information in the 'application.properties' file
+
+```java
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/earthTech_db?createDatabaseIfNotExist=true&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=password
+
+spring.jpa.show-sql=true
+spring.jpa.generate-ddl=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+spring.sql.init.mode=always
+
+```
+
+#### 5. install all Maven dependencies 
 ```
 mvn install
 ``` 
 
-#### 5. test the application
+#### 6. test the application
 ```
 mvn test
 ``` 
-#### 6. Run the spring boot application
+#### 7. Run the spring boot application
 ```
 mvn spring-boot:run
 ``` 
