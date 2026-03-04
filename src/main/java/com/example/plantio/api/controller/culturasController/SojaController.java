@@ -4,8 +4,6 @@ import com.example.plantio.api.dto.culturasDTO.SojaDTO;
 import com.example.plantio.api.model.culturas.Soja;
 import com.example.plantio.api.service.culturasService.SojaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -18,31 +16,27 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/soja")
-@EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 public class SojaController {
     @Autowired
     private SojaService service;
 
 
-    // METODO - GET
+    // METODO - GET (CRUD genérico)
     @GetMapping()
-    public ResponseEntity get(){
-        return ResponseEntity.ok(service.getSoja());
-
+    public ResponseEntity<?> get(){
+        return ResponseEntity.ok(service.getAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <SojaDTO> soja = service.getSojaById(id);
+    public ResponseEntity<?> getById(@PathVariable("id") Long id){
+        Optional<SojaDTO> soja = service.getById(id);
         return soja.isPresent() ? ResponseEntity.ok(soja.get()) : ResponseEntity.notFound().build();
-
     }
 
 
     // METODO - POST
     @PostMapping
-    public ResponseEntity METODO_post(@RequestBody Soja soja){
-
+    public ResponseEntity<?> METODO_post(@RequestBody Soja soja){
         try{
             SojaDTO zo = service.insert(soja);
             URI location = getUri(zo.getId());
@@ -60,8 +54,7 @@ public class SojaController {
 
     // METODO - PUT
     @PutMapping("/{id}")
-    public ResponseEntity METODO_put(@PathVariable("id") Long id, @RequestBody Soja soja){
-
+    public ResponseEntity<?> METODO_put(@PathVariable("id") Long id, @RequestBody Soja soja){
         soja.setId(id);
         SojaDTO zo = service.update(soja, id);
         return zo != null ? ResponseEntity.ok(zo) : ResponseEntity.notFound().build();
@@ -70,8 +63,7 @@ public class SojaController {
 
     // METODO - DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity METODO_delete(@PathVariable("id") Long id){
-
+    public ResponseEntity<?> METODO_delete(@PathVariable("id") Long id){
         boolean ok = service.delete(id);
         return ok ? ResponseEntity.ok(ok) : ResponseEntity.notFound().build();
     }
