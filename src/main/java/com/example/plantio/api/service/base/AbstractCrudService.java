@@ -77,7 +77,7 @@ public abstract class AbstractCrudService<T, D, R extends JpaRepository<T, Long>
             Method m = entity.getClass().getMethod("setId", Long.class);
             m.invoke(entity, id);
         } catch (Exception ex) {
-            // ignore se não existir
+            // ignore
         }
     }
 }
