@@ -27,13 +27,13 @@ public class DrenagemController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getDrenagem());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <DrenagemDTO> drenagem = service.getDrenagemById(id);
+        Optional <DrenagemDTO> drenagem = service.getById(id);
         return drenagem.isPresent() ? ResponseEntity.ok(drenagem.get()) : ResponseEntity.notFound().build();
 
     }
