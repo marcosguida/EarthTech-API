@@ -24,12 +24,12 @@ public class AlgodaoController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity<?> get(){
-        return ResponseEntity.ok(service.getAlgodao());
+        return ResponseEntity.ok(service.getAll());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<?> get(@PathVariable("id") Long id){
-        Optional <AlgodaoDTO> algodao = service.getAlgodaoById(id);
+        Optional <AlgodaoDTO> algodao = service.getById(id);
         return algodao.isPresent() ? ResponseEntity.ok(algodao.get()) : ResponseEntity.notFound().build();
     }
 
