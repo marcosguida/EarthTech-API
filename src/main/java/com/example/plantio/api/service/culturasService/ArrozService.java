@@ -79,7 +79,6 @@ public class ArrozService {
             db.setRisk34(arroz.getRisk34());
             db.setRisk35(arroz.getRisk35());
             db.setRisk36(arroz.getRisk36());
-            System.out.println("Arroz id " + db.getId());
 
             // Atualiza o arroz
             rep.save(db);

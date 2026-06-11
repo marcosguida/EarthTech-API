@@ -79,7 +79,6 @@ public class FeijaoService {
             db.setRisk34(feijao.getRisk34());
             db.setRisk35(feijao.getRisk35());
             db.setRisk36(feijao.getRisk36());
-            System.out.println("Feijao id " + db.getId());
 
             // Atualiza o feijao
             rep.save(db);

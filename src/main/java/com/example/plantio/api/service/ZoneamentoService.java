@@ -236,7 +236,6 @@ public class ZoneamentoService {
             db.setRisk34(zoneamento.getRisk34());
             db.setRisk35(zoneamento.getRisk35());
             db.setRisk36(zoneamento.getRisk36());
-            System.out.println("Zoneamento id " + db.getId());
 
             // Atualiza o zoneamento
             rep.save(db);

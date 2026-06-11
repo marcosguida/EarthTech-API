@@ -79,7 +79,6 @@ public class MilhoService {
             db.setRisk34(milho.getRisk34());
             db.setRisk35(milho.getRisk35());
             db.setRisk36(milho.getRisk36());
-            System.out.println("Milho id " + db.getId());
 
             // Atualiza o milho
             rep.save(db);

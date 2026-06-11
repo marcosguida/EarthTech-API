@@ -41,7 +41,6 @@ public class DrenagemService {
             db.setAreia(drenagem.getAreia());
             db.setArgila(drenagem.getArgila());
             db.setSilte(drenagem.getSilte());
-            System.out.println("Drenagem id " + db.getId());
 
             // Atualiza o drenagem
             rep.save(db);

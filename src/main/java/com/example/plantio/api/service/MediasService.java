@@ -49,7 +49,6 @@ public class MediasService {
             db.setAreia(medias.getAreia());
             db.setArgila(medias.getArgila());
             db.setSilte(medias.getSilte());
-            System.out.println("Medias id " + db.getId());
 
             // Atualiza o medias
             rep.save(db);

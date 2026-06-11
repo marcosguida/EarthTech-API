@@ -79,7 +79,6 @@ public class AlgodaoService {
             db.setRisk34(algodao.getRisk34());
             db.setRisk35(algodao.getRisk35());
             db.setRisk36(algodao.getRisk36());
-            System.out.println("Algodao id " + db.getId());
 
             // Atualiza o algodao
             rep.save(db);

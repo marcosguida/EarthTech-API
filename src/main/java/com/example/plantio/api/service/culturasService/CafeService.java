@@ -79,7 +79,6 @@ public class CafeService {
             db.setRisk34(cafe.getRisk34());
             db.setRisk35(cafe.getRisk35());
             db.setRisk36(cafe.getRisk36());
-            System.out.println("Cafe id " + db.getId());
 
             // Atualiza o cafe
             rep.save(db);
