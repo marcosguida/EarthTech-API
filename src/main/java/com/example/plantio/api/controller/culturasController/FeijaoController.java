@@ -28,13 +28,13 @@ public class FeijaoController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getFeijao());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <FeijaoDTO> feijao = service.getFeijaoById(id);
+        Optional <FeijaoDTO> feijao = service.getById(id);
         return feijao.isPresent() ? ResponseEntity.ok(feijao.get()) : ResponseEntity.notFound().build();
 
     }

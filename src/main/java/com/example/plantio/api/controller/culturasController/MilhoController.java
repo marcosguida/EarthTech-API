@@ -27,13 +27,13 @@ public class MilhoController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getMilho());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <MilhoDTO> milho = service.getMilhoById(id);
+        Optional <MilhoDTO> milho = service.getById(id);
         return milho.isPresent() ? ResponseEntity.ok(milho.get()) : ResponseEntity.notFound().build();
 
     }
