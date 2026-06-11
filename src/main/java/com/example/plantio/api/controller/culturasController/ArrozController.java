@@ -27,13 +27,13 @@ public class ArrozController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getArroz());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <ArrozDTO> arroz = service.getArrozById(id);
+        Optional <ArrozDTO> arroz = service.getById(id);
         return arroz.isPresent() ? ResponseEntity.ok(arroz.get()) : ResponseEntity.notFound().build();
 
     }
