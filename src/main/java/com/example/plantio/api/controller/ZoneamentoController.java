@@ -28,13 +28,13 @@ public class ZoneamentoController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getZoneamento());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <ZoneamentoDTO> zoneamento = service.getZoneamentoById(id);
+        Optional <ZoneamentoDTO> zoneamento = service.getById(id);
         return zoneamento.isPresent() ? ResponseEntity.ok(zoneamento.get()) : ResponseEntity.notFound().build();
 
     }
