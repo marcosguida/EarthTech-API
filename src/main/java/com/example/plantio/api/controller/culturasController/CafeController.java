@@ -27,13 +27,13 @@ public class CafeController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity get(){
-        return ResponseEntity.ok(service.getCafe());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity get(@PathVariable("id") Long id){
-        Optional <CafeDTO> cafe = service.getCafeById(id);
+        Optional <CafeDTO> cafe = service.getById(id);
         return cafe.isPresent() ? ResponseEntity.ok(cafe.get()) : ResponseEntity.notFound().build();
 
     }
