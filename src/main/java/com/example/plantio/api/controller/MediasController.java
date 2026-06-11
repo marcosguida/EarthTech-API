@@ -4,7 +4,6 @@ import com.example.plantio.api.dto.MediasDTO;
 import com.example.plantio.api.model.Medias;
 import com.example.plantio.api.service.MediasService;
 import org.springframework.beans.factory.annotation.Autowired;
-// ...existing imports...
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;

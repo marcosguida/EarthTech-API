@@ -4,7 +4,6 @@ import com.example.plantio.api.dto.culturasDTO.AlgodaoDTO;
 import com.example.plantio.api.model.culturas.Algodao;
 import com.example.plantio.api.service.culturasService.AlgodaoService;
 import org.springframework.beans.factory.annotation.Autowired;
-// ...existing imports...
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
