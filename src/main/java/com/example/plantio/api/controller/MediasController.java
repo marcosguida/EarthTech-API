@@ -25,13 +25,13 @@ public class MediasController {
     // METODO - GET
     @GetMapping()
     public ResponseEntity<?> get(){
-        return ResponseEntity.ok(service.getMedias());
+        return ResponseEntity.ok(service.getAll());
 
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<?> get(@PathVariable("id") Long id){
-        Optional <MediasDTO> medias = service.getMediasById(id);
+        Optional <MediasDTO> medias = service.getById(id);
         return medias.isPresent() ? ResponseEntity.ok(medias.get()) : ResponseEntity.notFound().build();
 
     }
