@@ -4,15 +4,12 @@ import com.example.plantio.api.model.Zoneamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * @author Marcos Ribeiro
  */
 
 public interface ZoneamentoRepository extends JpaRepository<Zoneamento, Long> {
-
-    Optional<Zoneamento> getZoneamentoById(Long id);
 
     List<Zoneamento> findBySafra(String safra);
 
