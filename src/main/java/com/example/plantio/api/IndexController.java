@@ -12,7 +12,7 @@ public class IndexController {
 
     @GetMapping
     public String get(){
-        return "API ErthTech";
+        return "API ErthTech - Agricultural zoning API with data from the state of Tocantins, Brazil. Developed by Marcos Ribeiro ";
     }
 
 
