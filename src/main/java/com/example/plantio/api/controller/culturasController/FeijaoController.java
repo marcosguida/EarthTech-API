@@ -4,8 +4,6 @@ import com.example.plantio.api.dto.culturasDTO.FeijaoDTO;
 import com.example.plantio.api.model.culturas.Feijao;
 import com.example.plantio.api.service.culturasService.FeijaoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -18,7 +16,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/feijao")
-@EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 public class FeijaoController {
 
     @Autowired

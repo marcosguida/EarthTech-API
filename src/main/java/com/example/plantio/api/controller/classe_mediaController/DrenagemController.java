@@ -4,8 +4,6 @@ import com.example.plantio.api.dto.classe_mediaDTO.DrenagemDTO;
 import com.example.plantio.api.model.classe_media.Drenagem;
 import com.example.plantio.api.service.classe_mediaService.DrenagemService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -18,7 +16,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/medias/drenagem")
-@EnableAutoConfiguration(exclude = { SecurityAutoConfiguration.class })
 public class DrenagemController {
     @Autowired
     private DrenagemService service;
